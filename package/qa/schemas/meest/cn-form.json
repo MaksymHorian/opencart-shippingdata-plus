@@ -1,0 +1,130 @@
+{
+  "module": "meest",
+  "valid_post": {
+    "sender": "Горян Максим Миколайович",
+    "sender_phone": "380996852908",
+    "sender_city": "5cb61671-749b-11df-b112-00215aee3ebe",
+    "sender_department": "41f031f8-5e8b-11ee-80c0-000c2961d091",
+    "recipient": "Іванов Петро",
+    "recipient_phone": "380501234567",
+    "recipient_city": "5cb61671-749b-11df-b112-00215aee3ebe",
+    "recipient_address_type": "department",
+    "recipient_department": "41f031f8-5e8b-11ee-80c0-000c2961d091",
+    "weight": "1",
+    "length": "10",
+    "width": "10",
+    "height": "10",
+    "declared_cost": "100",
+    "delivery_payer": "recipient",
+    "departure_description": "QA matrix CN form"
+  },
+  "cases": [
+    {
+      "id": "form.valid_department",
+      "note": "Valid department delivery payload",
+      "expect": { "valid": true, "no_error_fields": ["sender", "recipient", "recipient_city", "recipient_department", "weight"] }
+    },
+    {
+      "id": "form.invalid_phone",
+      "post": { "recipient_phone": "123" },
+      "expect": { "valid": false, "error_fields": ["recipient_phone"] }
+    },
+    {
+      "id": "form.invalid_weight_low",
+      "post": { "weight": "0.05" },
+      "expect": { "valid": false, "error_fields": ["weight"] }
+    },
+    {
+      "id": "form.invalid_weight_high",
+      "post": { "weight": "16" },
+      "expect": { "valid": false, "error_fields": ["weight"] }
+    },
+    {
+      "id": "form.missing_sender",
+      "post": { "sender": "" },
+      "expect": { "valid": false, "error_fields": ["sender"] }
+    },
+    {
+      "id": "form.invalid_sender_city",
+      "post": { "sender_city": "00000000-0000-0000-0000-000000000000" },
+      "expect": { "valid": false, "error_fields": ["sender_city"] }
+    },
+    {
+      "id": "form.invalid_recipient_department",
+      "post": { "recipient_department": "00000000-0000-0000-0000-000000000000" },
+      "expect": { "valid": false, "error_fields": ["recipient_department"] }
+    },
+    {
+      "id": "form.doors_missing_house",
+      "post": {
+        "recipient_address_type": "doors",
+        "recipient_address": "5cb61671-749b-11df-b112-00215aee3ebe",
+        "recipient_house": ""
+      },
+      "unset": ["recipient_department"],
+      "expect": { "valid": false, "error_fields": ["recipient_house"] }
+    },
+    {
+      "id": "form.doors_valid",
+      "post": {
+        "recipient_address_type": "doors",
+        "recipient_address": "5cb61671-749b-11df-b112-00215aee3ebe",
+        "recipient_house": "10",
+        "recipient_flat": "5"
+      },
+      "unset": ["recipient_department"],
+      "expect": { "valid": true, "no_error_fields": ["recipient_house", "recipient_address"] }
+    },
+    {
+      "id": "form.declared_cost_invalid",
+      "post": { "declared_cost": "0" },
+      "expect": { "valid": false, "error_fields": ["declared_cost"] }
+    },
+    {
+      "id": "form.description_too_long",
+      "post": { "departure_description": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" },
+      "expect": { "valid": false, "error_fields": ["departure_description"] }
+    },
+    {
+      "id": "form.missing_delivery_payer",
+      "post": { "delivery_payer": "" },
+      "expect": { "valid": false, "error_fields": ["delivery_payer"] }
+    },
+    {
+      "id": "form.payment_control_return_card_iban_prefix",
+      "post": {
+        "payment_control_enabled": "1",
+        "return_card_number": "UA213223130000026007233566001",
+        "payment_control": "500"
+      },
+      "expect": { "valid": false, "error_fields": ["return_card_number"] }
+    },
+    {
+      "id": "form.payment_control_return_card_too_short",
+      "post": {
+        "payment_control_enabled": "1",
+        "return_card_number": "123",
+        "payment_control": "500"
+      },
+      "expect": { "valid": false, "error_fields": ["return_card_number"] }
+    },
+    {
+      "id": "form.payment_control_sum_non_numeric",
+      "post": {
+        "payment_control_enabled": "1",
+        "return_card_number": "4149499912345678",
+        "payment_control": "abc"
+      },
+      "expect": { "valid": false, "error_fields": ["payment_control"] }
+    },
+    {
+      "id": "form.payment_control_valid",
+      "post": {
+        "payment_control_enabled": "1",
+        "return_card_number": "4149499912345678",
+        "payment_control": "500"
+      },
+      "expect": { "valid": true, "no_error_fields": ["return_card_number", "payment_control"] }
+    }
+  ]
+}

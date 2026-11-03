@@ -1,0 +1,258 @@
+{# "Shipping Data Plus" - module for OpenCart | (c) 2015-2026 OC Max | MIT. Attribution required: Prorab337 / OC Max, https://oc-max.com #}
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-shippingdata-plus" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+      </div>
+      <h1><i class="fa fa-truck"></i> {{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-general" data-toggle="tab">{{ tab_general }}</a></li>
+          <li><a href="#tab-backup" data-toggle="tab">{{ tab_backup }}</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab-general">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-shippingdata-plus" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default{% if module_shippingdata_plus_status %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_status" id="input-status" value="1" autocomplete="off"{% if module_shippingdata_plus_status %} checked="checked"{% endif %}> {{ text_enabled }}
+                </label>
+                <label class="btn btn-default{% if not module_shippingdata_plus_status %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_status" value="0" autocomplete="off"{% if not module_shippingdata_plus_status %} checked="checked"{% endif %}> {{ text_disabled }}
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_navbar }}</label>
+            <div class="col-sm-10">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default{% if module_shippingdata_plus_navbar %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_navbar" id="input-navbar" value="1" autocomplete="off"{% if module_shippingdata_plus_navbar %} checked="checked"{% endif %}> {{ text_enabled }}
+                </label>
+                <label class="btn btn-default{% if not module_shippingdata_plus_navbar %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_navbar" value="0" autocomplete="off"{% if not module_shippingdata_plus_navbar %} checked="checked"{% endif %}> {{ text_disabled }}
+                </label>
+              </div>
+              <p class="help-block">{{ help_navbar }}</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_order_list }}</label>
+            <div class="col-sm-10">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default{% if module_shippingdata_plus_order_list %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_order_list" id="input-order-list" value="1" autocomplete="off"{% if module_shippingdata_plus_order_list %} checked="checked"{% endif %}> {{ text_enabled }}
+                </label>
+                <label class="btn btn-default{% if not module_shippingdata_plus_order_list %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_order_list" value="0" autocomplete="off"{% if not module_shippingdata_plus_order_list %} checked="checked"{% endif %}> {{ text_disabled }}
+                </label>
+              </div>
+              <p class="help-block">{{ help_order_list }}</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_order_info }}</label>
+            <div class="col-sm-10">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default{% if module_shippingdata_plus_order_info %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_order_info" id="input-order-info" value="1" autocomplete="off"{% if module_shippingdata_plus_order_info %} checked="checked"{% endif %}> {{ text_enabled }}
+                </label>
+                <label class="btn btn-default{% if not module_shippingdata_plus_order_info %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_order_info" value="0" autocomplete="off"{% if not module_shippingdata_plus_order_info %} checked="checked"{% endif %}> {{ text_disabled }}
+                </label>
+              </div>
+              <p class="help-block">{{ help_order_info }}</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_account }}</label>
+            <div class="col-sm-10">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default{% if module_shippingdata_plus_account %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_account" id="input-account" value="1" autocomplete="off"{% if module_shippingdata_plus_account %} checked="checked"{% endif %}> {{ text_enabled }}
+                </label>
+                <label class="btn btn-default{% if not module_shippingdata_plus_account %} active{% endif %}">
+                  <input type="radio" name="module_shippingdata_plus_account" value="0" autocomplete="off"{% if not module_shippingdata_plus_account %} checked="checked"{% endif %}> {{ text_disabled }}
+                </label>
+              </div>
+              <p class="help-block">{{ help_account }}</p>
+            </div>
+          </div>
+        </form>
+          </div>
+          <div class="tab-pane" id="tab-backup">
+    {% for carrier in carriers %}
+    {% if loop.first %}
+    <div class="row">
+    {% elseif loop.index0 % 2 == 0 %}
+    </div>
+    <div class="row">
+    {% endif %}
+      <div class="col-sm-6">
+        <div class="panel panel-default sdp-carrier-panel sdp-carrier-{{ carrier.code }}">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-database"></i> {{ carrier.name }} — {{ text_backup }}</h3>
+          </div>
+          <div class="panel-body">
+            <p>{{ text_last_backup }}: <strong id="sdp-backed-up-{{ carrier.code }}">{% if carrier.backed_up %}{{ carrier.backed_up }}{% else %}{{ text_none }}{% endif %}</strong></p>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <td>{{ column_directory }}</td>
+                    <td class="text-right">{{ column_live }}</td>
+                    <td class="text-right">{{ column_spare }}</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in carrier.tables %}
+                  <tr>
+                    <td>
+                      {% if row.kind == 'cities' %}{{ text_cities }}
+                      {% elseif row.kind == 'departments' %}{{ text_departments }}
+                      {% elseif row.kind == 'regions' %}{{ text_regions }}
+                      {% else %}{{ text_references }}
+                      {% endif %}
+                    </td>
+                    <td class="text-right" id="sdp-live-{{ carrier.code }}-{{ row.name }}">{{ row.live }}</td>
+                    <td class="text-right" id="sdp-spare-{{ carrier.code }}-{{ row.name }}">{{ row.spare }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="btn btn-primary sdp-backup" data-carrier="{{ carrier.code }}"><i class="fa fa-download"></i> {{ button_backup }}</button>
+            <button type="button" class="btn btn-danger sdp-restore" data-carrier="{{ carrier.code }}"><i class="fa fa-undo"></i> {{ button_restore }}</button>
+          </div>
+        </div>
+      </div>
+    {% if loop.last %}
+    </div>
+    {% endif %}
+    {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+.sdp-carrier-panel {
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+.sdp-carrier-novaposhta {
+  border-left-color: #ff392e;
+}
+.sdp-carrier-rozetka_delivery {
+  border-left-color: #00A046;
+}
+.sdp-carrier-ukrposhta {
+  border-left-color: #ffce2f;
+}
+.sdp-carrier-meest {
+  border-left-color: #deebf5;
+}
+</style>
+<script type="text/javascript"><!--
+var sdpToken = '{{ user_token|e('js') }}';
+var sdpNone = '{{ text_none|e('js') }}';
+var sdpFailed = '{{ error_failed|e('js') }}';
+var sdpConfirm = '{{ text_confirm_restore|e('js') }}';
+var sdpSuccessBackup = '{{ success_backup|e('js') }}';
+var sdpSuccessRestore = '{{ success_restore|e('js') }}';
+
+function sdpAlert(kind, message) {
+  var $box = $('<div class="alert alert-dismissible">').addClass(kind === 'success' ? 'alert-success' : 'alert-danger');
+
+  $box.append($('<i class="fa">').addClass(kind === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'));
+  $box.append(document.createTextNode(' ' + message + ' '));
+  $box.append('<button type="button" class="close" data-dismiss="alert">&times;</button>');
+  $('#content > .container-fluid').prepend($box);
+}
+
+function sdpApply(carrier, json) {
+  if (!json.tables) {
+    return;
+  }
+
+  $.each(json.tables, function(_, row) {
+    $('#sdp-live-' + carrier + '-' + row.name).text(row.live);
+    $('#sdp-spare-' + carrier + '-' + row.name).text(row.spare);
+  });
+
+  $('#sdp-backed-up-' + carrier).text(json.backed_up ? json.backed_up : sdpNone);
+}
+
+function sdpAction(action, carrier, $button) {
+  var iconClass = '';
+
+  $.ajax({
+    url: 'index.php?route=extension/module/shippingdata_plus/' + action + '&user_token=' + sdpToken,
+    type: 'POST',
+    data: { carrier: carrier },
+    dataType: 'json',
+    timeout: 0,
+    beforeSend: function() {
+      var $icon = $button.find('i');
+
+      iconClass = $icon.attr('class');
+      $button.prop('disabled', true);
+      $icon.attr('class', 'fa fa-spinner fa-spin');
+    },
+    complete: function() {
+      $button.prop('disabled', false);
+      $button.find('i').attr('class', iconClass);
+    },
+    success: function(json) {
+      if (!json || json.error) {
+        sdpAlert('danger', json && json.error ? json.error : sdpFailed);
+        return;
+      }
+
+      sdpApply(carrier, json);
+      sdpAlert('success', action === 'restore' ? sdpSuccessRestore : sdpSuccessBackup);
+    },
+    error: function() {
+      sdpAlert('danger', sdpFailed);
+    }
+  });
+}
+
+$('.sdp-backup').on('click', function() {
+  sdpAction('backup', $(this).attr('data-carrier'), $(this));
+});
+
+$('.sdp-restore').on('click', function() {
+  if (!confirm(sdpConfirm)) {
+    return;
+  }
+
+  sdpAction('restore', $(this).attr('data-carrier'), $(this));
+});
+//--></script>
+{{ footer }}

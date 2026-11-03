@@ -1,0 +1,8 @@
+{
+  "name": "image-screenshot",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.51.0"
+  }
+}

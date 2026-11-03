@@ -1,0 +1,20 @@
+{
+  "module": "ukrposhta",
+  "setting_key": "shipping_ukrposhta",
+  "flat_keys": ["shipping_ukrposhta_status", "shipping_ukrposhta_sort_order"],
+  "product_id": 40,
+  "address": {
+    "country_id": 220,
+    "zone_id": 3490,
+    "city": "Київ",
+    "address_1": ""
+  },
+  "settings": [
+    {
+      "id": "stub",
+      "layer": "documented",
+      "note": "Stub — expand from admin form / DB blob like meest.json"
+    }
+  ],
+  "critical_pairs": []
+}

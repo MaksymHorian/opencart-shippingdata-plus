@@ -1,0 +1,3110 @@
+{
+  "scrapedAt": "2026-09-09T12:35:48.175Z",
+  "reference": {
+    "fileId": "2544",
+    "url": "https://opencartforum.com/files/file/2544--/"
+  },
+  "target": {
+    "fileId": "9692",
+    "url": "https://opencartforum.com/files/file/9692--/"
+  },
+  "tabs": {
+    "Загальні": {
+      "npFieldCount": 151,
+      "meestFieldCount": 70,
+      "onlyOnNp": [
+        "file_description[1]",
+        "file_description[2]",
+        "file_cost[USD]",
+        "file_cost[UAH]",
+        "service[0][key]",
+        "service[0][value][USD]",
+        "service[0][value][UAH]",
+        "service[1][key]",
+        "service[1][value][USD]",
+        "service[1][value][UAH]",
+        "service[2][key]",
+        "service[2][value][USD]",
+        "service[2][value][UAH]",
+        "discount",
+        "downloads_field_12_checkbox",
+        "downloads_field_4",
+        "id",
+        "ev",
+        "dl",
+        "if",
+        "ts",
+        "iw",
+        "sw",
+        "sh",
+        "v",
+        "r",
+        "ec",
+        "o",
+        "aems",
+        "fbp"
+      ],
+      "valueDiffs": [
+        {
+          "name": "ref",
+          "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+          "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+        },
+        {
+          "name": "plupload",
+          "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+          "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+        },
+        {
+          "name": "file_tags",
+          "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+        },
+        {
+          "name": "file_primary_screenshot",
+          "np": "446150",
+          "meest": "446992"
+        },
+        {
+          "name": "file_lang_title[5]",
+          "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_lang_title[1]",
+          "np": "\"Nova poshta API\" - shipping module for OpenCart",
+          "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+        },
+        {
+          "name": "file_lang_title[2]",
+          "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_desc_short[5]",
+          "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур'єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[1]",
+          "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+          "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[2]",
+          "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+        },
+        {
+          "name": "file_description[5]",
+          "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+          "meest": "<p>\n\t<strong>Meest ПОШТА</strong> — український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь процес "
+        },
+        {
+          "name": "downloads_field_26",
+          "np": "See description",
+          "meest": "default"
+        }
+      ],
+      "keyFields": [
+        {
+          "name": "file_tags",
+          "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "checked": false
+        },
+        {
+          "name": "file_tags_freechoice_prefix",
+          "val": "on",
+          "checked": true
+        },
+        {
+          "name": "file_tags_prefix",
+          "val": "oc-max",
+          "checked": false
+        },
+        {
+          "name": "downloads_category_select",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "downloads_categories",
+          "val": "2,6,66",
+          "checked": false
+        },
+        {
+          "name": "ukraine",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "ukraine_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "file_lang_title[5]",
+          "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[1]",
+          "val": "\"Nova poshta API\" - shipping module for OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[2]",
+          "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "radio_file_cost_type__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_cost_type",
+          "val": "paid",
+          "checked": true
+        },
+        {
+          "name": "file_cost[USD]",
+          "val": "25.00",
+          "checked": false
+        },
+        {
+          "name": "file_cost[UAH]",
+          "val": "1300.00",
+          "checked": false
+        },
+        {
+          "name": "service[0][key]",
+          "val": "Встановлення та оновлення",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][UAH]",
+          "val": "400.00",
+          "checked": false
+        },
+        {
+          "name": "service[1][key]",
+          "val": "Адаптація",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][USD]",
+          "val": "10",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][UAH]",
+          "val": "600.00",
+          "checked": false
+        },
+        {
+          "name": "service[2][key]",
+          "val": "Підтримати проект",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][UAH]",
+          "val": "300.00",
+          "checked": false
+        },
+        {
+          "name": "radio_file_renewals__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewals",
+          "val": "0",
+          "checked": true
+        },
+        {
+          "name": "file_renewal_term[term]",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewal_term[unit]",
+          "val": "m",
+          "checked": false
+        },
+        {
+          "name": "min_quantity",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "discount",
+          "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_13",
+          "val": "Да",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_2",
+          "val": "На один домен + його піддомен",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_4",
+          "val": "PHP library CURL, PHP version 5.6 and higher",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_10",
+          "val": "Так",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[1]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_20[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_20[0]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_26",
+          "val": "See description",
+          "checked": false
+        },
+        {
+          "name": "radio_downloads_field_28__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_28",
+          "val": "0",
+          "checked": true
+        }
+      ]
+    },
+    "Опис": {
+      "npFieldCount": 86,
+      "meestFieldCount": 70,
+      "onlyOnNp": [
+        "file_description[1]",
+        "file_description[2]",
+        "file_cost[USD]",
+        "file_cost[UAH]",
+        "service[0][key]",
+        "service[0][value][USD]",
+        "service[0][value][UAH]",
+        "service[1][key]",
+        "service[1][value][USD]",
+        "service[1][value][UAH]",
+        "service[2][key]",
+        "service[2][value][USD]",
+        "service[2][value][UAH]",
+        "discount",
+        "downloads_field_12_checkbox",
+        "downloads_field_4"
+      ],
+      "valueDiffs": [
+        {
+          "name": "ref",
+          "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+          "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+        },
+        {
+          "name": "plupload",
+          "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+          "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+        },
+        {
+          "name": "file_tags",
+          "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+        },
+        {
+          "name": "file_primary_screenshot",
+          "np": "446150",
+          "meest": "446992"
+        },
+        {
+          "name": "file_lang_title[5]",
+          "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_lang_title[1]",
+          "np": "\"Nova poshta API\" - shipping module for OpenCart",
+          "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+        },
+        {
+          "name": "file_lang_title[2]",
+          "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_desc_short[5]",
+          "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[1]",
+          "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+          "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[2]",
+          "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+        },
+        {
+          "name": "file_description[5]",
+          "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+          "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+        },
+        {
+          "name": "downloads_field_26",
+          "np": "See description",
+          "meest": "default"
+        }
+      ],
+      "keyFields": [
+        {
+          "name": "file_tags",
+          "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "checked": false
+        },
+        {
+          "name": "file_tags_freechoice_prefix",
+          "val": "on",
+          "checked": true
+        },
+        {
+          "name": "file_tags_prefix",
+          "val": "oc-max",
+          "checked": false
+        },
+        {
+          "name": "downloads_category_select",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "downloads_categories",
+          "val": "2,6,66",
+          "checked": false
+        },
+        {
+          "name": "ukraine",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "ukraine_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "file_lang_title[5]",
+          "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[1]",
+          "val": "\"Nova poshta API\" - shipping module for OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[2]",
+          "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "radio_file_cost_type__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_cost_type",
+          "val": "paid",
+          "checked": true
+        },
+        {
+          "name": "file_cost[USD]",
+          "val": "25.00",
+          "checked": false
+        },
+        {
+          "name": "file_cost[UAH]",
+          "val": "1300.00",
+          "checked": false
+        },
+        {
+          "name": "service[0][key]",
+          "val": "Встановлення та оновлення",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][UAH]",
+          "val": "400.00",
+          "checked": false
+        },
+        {
+          "name": "service[1][key]",
+          "val": "Адаптація",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][USD]",
+          "val": "10",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][UAH]",
+          "val": "600.00",
+          "checked": false
+        },
+        {
+          "name": "service[2][key]",
+          "val": "Підтримати проект",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][UAH]",
+          "val": "300.00",
+          "checked": false
+        },
+        {
+          "name": "radio_file_renewals__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewals",
+          "val": "0",
+          "checked": true
+        },
+        {
+          "name": "file_renewal_term[term]",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewal_term[unit]",
+          "val": "m",
+          "checked": false
+        },
+        {
+          "name": "min_quantity",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "discount",
+          "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_13",
+          "val": "Да",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_2",
+          "val": "На один домен + його піддомен",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_4",
+          "val": "PHP library CURL, PHP version 5.6 and higher",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_10",
+          "val": "Так",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[1]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_20[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_20[0]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_26",
+          "val": "See description",
+          "checked": false
+        },
+        {
+          "name": "radio_downloads_field_28__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_28",
+          "val": "0",
+          "checked": true
+        }
+      ]
+    },
+    "Вартість та послуги": {
+      "npFieldCount": 86,
+      "meestFieldCount": 70,
+      "onlyOnNp": [
+        "file_description[1]",
+        "file_description[2]",
+        "file_cost[USD]",
+        "file_cost[UAH]",
+        "service[0][key]",
+        "service[0][value][USD]",
+        "service[0][value][UAH]",
+        "service[1][key]",
+        "service[1][value][USD]",
+        "service[1][value][UAH]",
+        "service[2][key]",
+        "service[2][value][USD]",
+        "service[2][value][UAH]",
+        "discount",
+        "downloads_field_12_checkbox",
+        "downloads_field_4"
+      ],
+      "valueDiffs": [
+        {
+          "name": "ref",
+          "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+          "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+        },
+        {
+          "name": "plupload",
+          "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+          "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+        },
+        {
+          "name": "file_tags",
+          "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+        },
+        {
+          "name": "file_primary_screenshot",
+          "np": "446150",
+          "meest": "446992"
+        },
+        {
+          "name": "file_lang_title[5]",
+          "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_lang_title[1]",
+          "np": "\"Nova poshta API\" - shipping module for OpenCart",
+          "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+        },
+        {
+          "name": "file_lang_title[2]",
+          "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_desc_short[5]",
+          "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[1]",
+          "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+          "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[2]",
+          "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+        },
+        {
+          "name": "file_description[5]",
+          "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+          "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+        },
+        {
+          "name": "downloads_field_26",
+          "np": "See description",
+          "meest": "default"
+        }
+      ],
+      "keyFields": [
+        {
+          "name": "file_tags",
+          "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "checked": false
+        },
+        {
+          "name": "file_tags_freechoice_prefix",
+          "val": "on",
+          "checked": true
+        },
+        {
+          "name": "file_tags_prefix",
+          "val": "oc-max",
+          "checked": false
+        },
+        {
+          "name": "downloads_category_select",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "downloads_categories",
+          "val": "2,6,66",
+          "checked": false
+        },
+        {
+          "name": "ukraine",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "ukraine_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "file_lang_title[5]",
+          "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[1]",
+          "val": "\"Nova poshta API\" - shipping module for OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[2]",
+          "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "radio_file_cost_type__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_cost_type",
+          "val": "paid",
+          "checked": true
+        },
+        {
+          "name": "file_cost[USD]",
+          "val": "25.00",
+          "checked": false
+        },
+        {
+          "name": "file_cost[UAH]",
+          "val": "1300.00",
+          "checked": false
+        },
+        {
+          "name": "service[0][key]",
+          "val": "Встановлення та оновлення",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][UAH]",
+          "val": "400.00",
+          "checked": false
+        },
+        {
+          "name": "service[1][key]",
+          "val": "Адаптація",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][USD]",
+          "val": "10",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][UAH]",
+          "val": "600.00",
+          "checked": false
+        },
+        {
+          "name": "service[2][key]",
+          "val": "Підтримати проект",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][UAH]",
+          "val": "300.00",
+          "checked": false
+        },
+        {
+          "name": "radio_file_renewals__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewals",
+          "val": "0",
+          "checked": true
+        },
+        {
+          "name": "file_renewal_term[term]",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewal_term[unit]",
+          "val": "m",
+          "checked": false
+        },
+        {
+          "name": "min_quantity",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "discount",
+          "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_13",
+          "val": "Да",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_2",
+          "val": "На один домен + його піддомен",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_4",
+          "val": "PHP library CURL, PHP version 5.6 and higher",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_10",
+          "val": "Так",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[1]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_20[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_20[0]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_26",
+          "val": "See description",
+          "checked": false
+        },
+        {
+          "name": "radio_downloads_field_28__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_28",
+          "val": "0",
+          "checked": true
+        }
+      ]
+    },
+    "Характеристики": {
+      "npFieldCount": 86,
+      "meestFieldCount": 70,
+      "onlyOnNp": [
+        "file_description[1]",
+        "file_description[2]",
+        "file_cost[USD]",
+        "file_cost[UAH]",
+        "service[0][key]",
+        "service[0][value][USD]",
+        "service[0][value][UAH]",
+        "service[1][key]",
+        "service[1][value][USD]",
+        "service[1][value][UAH]",
+        "service[2][key]",
+        "service[2][value][USD]",
+        "service[2][value][UAH]",
+        "discount",
+        "downloads_field_12_checkbox",
+        "downloads_field_4"
+      ],
+      "valueDiffs": [
+        {
+          "name": "ref",
+          "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+          "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+        },
+        {
+          "name": "plupload",
+          "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+          "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+        },
+        {
+          "name": "file_tags",
+          "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+        },
+        {
+          "name": "file_primary_screenshot",
+          "np": "446150",
+          "meest": "446992"
+        },
+        {
+          "name": "file_lang_title[5]",
+          "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_lang_title[1]",
+          "np": "\"Nova poshta API\" - shipping module for OpenCart",
+          "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+        },
+        {
+          "name": "file_lang_title[2]",
+          "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+        },
+        {
+          "name": "file_desc_short[5]",
+          "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[1]",
+          "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+          "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+        },
+        {
+          "name": "file_desc_short[2]",
+          "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+          "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+        },
+        {
+          "name": "file_description[5]",
+          "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+          "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+        },
+        {
+          "name": "downloads_field_26",
+          "np": "See description",
+          "meest": "default"
+        }
+      ],
+      "keyFields": [
+        {
+          "name": "file_tags",
+          "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "checked": false
+        },
+        {
+          "name": "file_tags_freechoice_prefix",
+          "val": "on",
+          "checked": true
+        },
+        {
+          "name": "file_tags_prefix",
+          "val": "oc-max",
+          "checked": false
+        },
+        {
+          "name": "downloads_category_select",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "downloads_categories",
+          "val": "2,6,66",
+          "checked": false
+        },
+        {
+          "name": "ukraine",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "ukraine_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "file_lang_title[5]",
+          "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[1]",
+          "val": "\"Nova poshta API\" - shipping module for OpenCart",
+          "checked": false
+        },
+        {
+          "name": "file_lang_title[2]",
+          "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+          "checked": false
+        },
+        {
+          "name": "radio_file_cost_type__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_cost_type",
+          "val": "paid",
+          "checked": true
+        },
+        {
+          "name": "file_cost[USD]",
+          "val": "25.00",
+          "checked": false
+        },
+        {
+          "name": "file_cost[UAH]",
+          "val": "1300.00",
+          "checked": false
+        },
+        {
+          "name": "service[0][key]",
+          "val": "Встановлення та оновлення",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[0][value][UAH]",
+          "val": "400.00",
+          "checked": false
+        },
+        {
+          "name": "service[1][key]",
+          "val": "Адаптація",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][USD]",
+          "val": "10",
+          "checked": false
+        },
+        {
+          "name": "service[1][value][UAH]",
+          "val": "600.00",
+          "checked": false
+        },
+        {
+          "name": "service[2][key]",
+          "val": "Підтримати проект",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][USD]",
+          "val": "7",
+          "checked": false
+        },
+        {
+          "name": "service[2][value][UAH]",
+          "val": "300.00",
+          "checked": false
+        },
+        {
+          "name": "radio_file_renewals__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewals",
+          "val": "0",
+          "checked": true
+        },
+        {
+          "name": "file_renewal_term[term]",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "file_renewal_term[unit]",
+          "val": "m",
+          "checked": false
+        },
+        {
+          "name": "min_quantity",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "discount",
+          "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_13",
+          "val": "Да",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12",
+          "val": "0",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_12_checkbox",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_29[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_30[]",
+          "val": "Українська,Англійська,Російська",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_3[]",
+          "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_5[]",
+          "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_9[]",
+          "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_2",
+          "val": "На один домен + його піддомен",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_4",
+          "val": "PHP library CURL, PHP version 5.6 and higher",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_6[]",
+          "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_10",
+          "val": "Так",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_16[1]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_20[__EMPTY]",
+          "val": "__EMPTY",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_20[0]",
+          "val": "1",
+          "checked": true
+        },
+        {
+          "name": "downloads_field_26",
+          "val": "See description",
+          "checked": false
+        },
+        {
+          "name": "radio_downloads_field_28__empty",
+          "val": "1",
+          "checked": false
+        },
+        {
+          "name": "downloads_field_28",
+          "val": "0",
+          "checked": true
+        }
+      ]
+    },
+    "editTags": {
+      "npFieldCount": 19,
+      "meestFieldCount": 19,
+      "onlyOnNp": [],
+      "valueDiffs": [
+        {
+          "name": "ref",
+          "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXRUYWdz",
+          "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXRUYWdz"
+        },
+        {
+          "name": "plupload",
+          "np": "c10b08255b4769b9d75be81d633bbfc7",
+          "meest": "e72186de53f526c09a5e272a4dce23be"
+        },
+        {
+          "name": "file_tags",
+          "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+        }
+      ],
+      "keyFields": [
+        {
+          "name": "file_tags",
+          "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+          "checked": false
+        },
+        {
+          "name": "file_tags_freechoice_prefix",
+          "val": "on",
+          "checked": true
+        },
+        {
+          "name": "file_tags_prefix",
+          "val": "oc-max",
+          "checked": false
+        }
+      ]
+    }
+  },
+  "pricing": {
+    "np": {
+      "file_cost_type": "",
+      "file_cost_UAH": "1300.00",
+      "file_cost_USD": "25.00",
+      "file_cost_old_UAH": "",
+      "file_cost_old_USD": "",
+      "file_renewals": "0",
+      "renewal_amount_UAH": "",
+      "renewal_amount_USD": "",
+      "renewal_term": "1",
+      "renewal_unit": "m",
+      "min_quantity": "1",
+      "discount": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+      "services": [
+        {
+          "name": "service[0][key]",
+          "val": "Встановлення та оновлення"
+        },
+        {
+          "name": "service[0][value][USD]",
+          "val": "7"
+        },
+        {
+          "name": "service[0][value][UAH]",
+          "val": "400.00"
+        },
+        {
+          "name": "service[0][is_software]",
+          "val": ""
+        },
+        {
+          "name": "service[1][key]",
+          "val": "Адаптація"
+        },
+        {
+          "name": "service[1][value][USD]",
+          "val": "10"
+        },
+        {
+          "name": "service[1][value][UAH]",
+          "val": "600.00"
+        },
+        {
+          "name": "service[1][is_software]",
+          "val": ""
+        },
+        {
+          "name": "service[2][key]",
+          "val": "Підтримати проект"
+        },
+        {
+          "name": "service[2][value][USD]",
+          "val": "7"
+        },
+        {
+          "name": "service[2][value][UAH]",
+          "val": "300.00"
+        },
+        {
+          "name": "service[2][is_software]",
+          "val": ""
+        }
+      ]
+    },
+    "meestBefore": {
+      "file_cost_type": "",
+      "file_cost_UAH": "",
+      "file_cost_USD": "",
+      "file_cost_old_UAH": "",
+      "file_cost_old_USD": "",
+      "file_renewals": "0",
+      "renewal_amount_UAH": "",
+      "renewal_amount_USD": "",
+      "renewal_term": "1",
+      "renewal_unit": "m",
+      "min_quantity": "1",
+      "discount": "",
+      "services": []
+    }
+  },
+  "gaps": [
+    {
+      "tab": "Загальні",
+      "onlyOnNp": 81,
+      "diffs": 12
+    },
+    {
+      "tab": "Опис",
+      "onlyOnNp": 16,
+      "diffs": 12
+    },
+    {
+      "tab": "Вартість та послуги",
+      "onlyOnNp": 16,
+      "diffs": 12
+    },
+    {
+      "tab": "Характеристики",
+      "onlyOnNp": 16,
+      "diffs": 12
+    },
+    {
+      "tab": "editTags",
+      "onlyOnNp": 0,
+      "diffs": 3
+    }
+  ],
+  "meestAfter": {
+    "pricing": {
+      "file_cost_type": "",
+      "file_cost_UAH": "",
+      "file_cost_USD": "",
+      "file_cost_old_UAH": "",
+      "file_cost_old_USD": "",
+      "file_renewals": "0",
+      "renewal_amount_UAH": "",
+      "renewal_amount_USD": "",
+      "renewal_term": "1",
+      "renewal_unit": "m",
+      "min_quantity": "1",
+      "discount": "",
+      "services": []
+    },
+    "tabs": {
+      "Загальні": {
+        "npFieldCount": 151,
+        "meestFieldCount": 70,
+        "onlyOnNp": [
+          "file_description[1]",
+          "file_description[2]",
+          "file_cost[USD]",
+          "file_cost[UAH]",
+          "service[0][key]",
+          "service[0][value][USD]",
+          "service[0][value][UAH]",
+          "service[1][key]",
+          "service[1][value][USD]",
+          "service[1][value][UAH]",
+          "service[2][key]",
+          "service[2][value][USD]",
+          "service[2][value][UAH]",
+          "discount",
+          "downloads_field_12_checkbox",
+          "downloads_field_4",
+          "id",
+          "ev",
+          "dl",
+          "if",
+          "ts",
+          "iw",
+          "sw",
+          "sh",
+          "v",
+          "r",
+          "ec",
+          "o",
+          "aems",
+          "fbp"
+        ],
+        "valueDiffs": [
+          {
+            "name": "ref",
+            "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+            "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+          },
+          {
+            "name": "plupload",
+            "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+            "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+          },
+          {
+            "name": "file_tags",
+            "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+          },
+          {
+            "name": "file_primary_screenshot",
+            "np": "446150",
+            "meest": "446992"
+          },
+          {
+            "name": "file_lang_title[5]",
+            "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_lang_title[1]",
+            "np": "\"Nova poshta API\" - shipping module for OpenCart",
+            "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+          },
+          {
+            "name": "file_lang_title[2]",
+            "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_desc_short[5]",
+            "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур'єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[1]",
+            "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+            "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[2]",
+            "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+          },
+          {
+            "name": "file_description[5]",
+            "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+            "meest": "<p>\n\t<strong>Meest ПОШТА</strong> — український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь процес "
+          },
+          {
+            "name": "downloads_field_26",
+            "np": "See description",
+            "meest": "default"
+          }
+        ],
+        "keyFields": [
+          {
+            "name": "file_tags",
+            "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "checked": false
+          },
+          {
+            "name": "file_tags_freechoice_prefix",
+            "val": "on",
+            "checked": true
+          },
+          {
+            "name": "file_tags_prefix",
+            "val": "oc-max",
+            "checked": false
+          },
+          {
+            "name": "downloads_category_select",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "downloads_categories",
+            "val": "2,6,66",
+            "checked": false
+          },
+          {
+            "name": "ukraine",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "ukraine_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "file_lang_title[5]",
+            "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[1]",
+            "val": "\"Nova poshta API\" - shipping module for OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[2]",
+            "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "radio_file_cost_type__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_cost_type",
+            "val": "paid",
+            "checked": true
+          },
+          {
+            "name": "file_cost[USD]",
+            "val": "25.00",
+            "checked": false
+          },
+          {
+            "name": "file_cost[UAH]",
+            "val": "1300.00",
+            "checked": false
+          },
+          {
+            "name": "service[0][key]",
+            "val": "Встановлення та оновлення",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][UAH]",
+            "val": "400.00",
+            "checked": false
+          },
+          {
+            "name": "service[1][key]",
+            "val": "Адаптація",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][USD]",
+            "val": "10",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][UAH]",
+            "val": "600.00",
+            "checked": false
+          },
+          {
+            "name": "service[2][key]",
+            "val": "Підтримати проект",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][UAH]",
+            "val": "300.00",
+            "checked": false
+          },
+          {
+            "name": "radio_file_renewals__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewals",
+            "val": "0",
+            "checked": true
+          },
+          {
+            "name": "file_renewal_term[term]",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewal_term[unit]",
+            "val": "m",
+            "checked": false
+          },
+          {
+            "name": "min_quantity",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "discount",
+            "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_13",
+            "val": "Да",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_2",
+            "val": "На один домен + його піддомен",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_4",
+            "val": "PHP library CURL, PHP version 5.6 and higher",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_10",
+            "val": "Так",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[1]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_20[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_20[0]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_26",
+            "val": "See description",
+            "checked": false
+          },
+          {
+            "name": "radio_downloads_field_28__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_28",
+            "val": "0",
+            "checked": true
+          }
+        ]
+      },
+      "Опис": {
+        "npFieldCount": 86,
+        "meestFieldCount": 70,
+        "onlyOnNp": [
+          "file_description[1]",
+          "file_description[2]",
+          "file_cost[USD]",
+          "file_cost[UAH]",
+          "service[0][key]",
+          "service[0][value][USD]",
+          "service[0][value][UAH]",
+          "service[1][key]",
+          "service[1][value][USD]",
+          "service[1][value][UAH]",
+          "service[2][key]",
+          "service[2][value][USD]",
+          "service[2][value][UAH]",
+          "discount",
+          "downloads_field_12_checkbox",
+          "downloads_field_4"
+        ],
+        "valueDiffs": [
+          {
+            "name": "ref",
+            "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+            "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+          },
+          {
+            "name": "plupload",
+            "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+            "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+          },
+          {
+            "name": "file_tags",
+            "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+          },
+          {
+            "name": "file_primary_screenshot",
+            "np": "446150",
+            "meest": "446992"
+          },
+          {
+            "name": "file_lang_title[5]",
+            "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_lang_title[1]",
+            "np": "\"Nova poshta API\" - shipping module for OpenCart",
+            "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+          },
+          {
+            "name": "file_lang_title[2]",
+            "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_desc_short[5]",
+            "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[1]",
+            "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+            "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[2]",
+            "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+          },
+          {
+            "name": "file_description[5]",
+            "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+            "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+          },
+          {
+            "name": "downloads_field_26",
+            "np": "See description",
+            "meest": "default"
+          }
+        ],
+        "keyFields": [
+          {
+            "name": "file_tags",
+            "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "checked": false
+          },
+          {
+            "name": "file_tags_freechoice_prefix",
+            "val": "on",
+            "checked": true
+          },
+          {
+            "name": "file_tags_prefix",
+            "val": "oc-max",
+            "checked": false
+          },
+          {
+            "name": "downloads_category_select",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "downloads_categories",
+            "val": "2,6,66",
+            "checked": false
+          },
+          {
+            "name": "ukraine",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "ukraine_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "file_lang_title[5]",
+            "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[1]",
+            "val": "\"Nova poshta API\" - shipping module for OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[2]",
+            "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "radio_file_cost_type__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_cost_type",
+            "val": "paid",
+            "checked": true
+          },
+          {
+            "name": "file_cost[USD]",
+            "val": "25.00",
+            "checked": false
+          },
+          {
+            "name": "file_cost[UAH]",
+            "val": "1300.00",
+            "checked": false
+          },
+          {
+            "name": "service[0][key]",
+            "val": "Встановлення та оновлення",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][UAH]",
+            "val": "400.00",
+            "checked": false
+          },
+          {
+            "name": "service[1][key]",
+            "val": "Адаптація",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][USD]",
+            "val": "10",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][UAH]",
+            "val": "600.00",
+            "checked": false
+          },
+          {
+            "name": "service[2][key]",
+            "val": "Підтримати проект",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][UAH]",
+            "val": "300.00",
+            "checked": false
+          },
+          {
+            "name": "radio_file_renewals__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewals",
+            "val": "0",
+            "checked": true
+          },
+          {
+            "name": "file_renewal_term[term]",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewal_term[unit]",
+            "val": "m",
+            "checked": false
+          },
+          {
+            "name": "min_quantity",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "discount",
+            "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_13",
+            "val": "Да",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_2",
+            "val": "На один домен + його піддомен",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_4",
+            "val": "PHP library CURL, PHP version 5.6 and higher",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_10",
+            "val": "Так",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[1]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_20[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_20[0]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_26",
+            "val": "See description",
+            "checked": false
+          },
+          {
+            "name": "radio_downloads_field_28__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_28",
+            "val": "0",
+            "checked": true
+          }
+        ]
+      },
+      "Вартість та послуги": {
+        "npFieldCount": 86,
+        "meestFieldCount": 70,
+        "onlyOnNp": [
+          "file_description[1]",
+          "file_description[2]",
+          "file_cost[USD]",
+          "file_cost[UAH]",
+          "service[0][key]",
+          "service[0][value][USD]",
+          "service[0][value][UAH]",
+          "service[1][key]",
+          "service[1][value][USD]",
+          "service[1][value][UAH]",
+          "service[2][key]",
+          "service[2][value][USD]",
+          "service[2][value][UAH]",
+          "discount",
+          "downloads_field_12_checkbox",
+          "downloads_field_4"
+        ],
+        "valueDiffs": [
+          {
+            "name": "ref",
+            "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+            "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+          },
+          {
+            "name": "plupload",
+            "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+            "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+          },
+          {
+            "name": "file_tags",
+            "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+          },
+          {
+            "name": "file_primary_screenshot",
+            "np": "446150",
+            "meest": "446992"
+          },
+          {
+            "name": "file_lang_title[5]",
+            "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_lang_title[1]",
+            "np": "\"Nova poshta API\" - shipping module for OpenCart",
+            "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+          },
+          {
+            "name": "file_lang_title[2]",
+            "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_desc_short[5]",
+            "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[1]",
+            "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+            "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[2]",
+            "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+          },
+          {
+            "name": "file_description[5]",
+            "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+            "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+          },
+          {
+            "name": "downloads_field_26",
+            "np": "See description",
+            "meest": "default"
+          }
+        ],
+        "keyFields": [
+          {
+            "name": "file_tags",
+            "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "checked": false
+          },
+          {
+            "name": "file_tags_freechoice_prefix",
+            "val": "on",
+            "checked": true
+          },
+          {
+            "name": "file_tags_prefix",
+            "val": "oc-max",
+            "checked": false
+          },
+          {
+            "name": "downloads_category_select",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "downloads_categories",
+            "val": "2,6,66",
+            "checked": false
+          },
+          {
+            "name": "ukraine",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "ukraine_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "file_lang_title[5]",
+            "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[1]",
+            "val": "\"Nova poshta API\" - shipping module for OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[2]",
+            "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "radio_file_cost_type__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_cost_type",
+            "val": "paid",
+            "checked": true
+          },
+          {
+            "name": "file_cost[USD]",
+            "val": "25.00",
+            "checked": false
+          },
+          {
+            "name": "file_cost[UAH]",
+            "val": "1300.00",
+            "checked": false
+          },
+          {
+            "name": "service[0][key]",
+            "val": "Встановлення та оновлення",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][UAH]",
+            "val": "400.00",
+            "checked": false
+          },
+          {
+            "name": "service[1][key]",
+            "val": "Адаптація",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][USD]",
+            "val": "10",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][UAH]",
+            "val": "600.00",
+            "checked": false
+          },
+          {
+            "name": "service[2][key]",
+            "val": "Підтримати проект",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][UAH]",
+            "val": "300.00",
+            "checked": false
+          },
+          {
+            "name": "radio_file_renewals__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewals",
+            "val": "0",
+            "checked": true
+          },
+          {
+            "name": "file_renewal_term[term]",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewal_term[unit]",
+            "val": "m",
+            "checked": false
+          },
+          {
+            "name": "min_quantity",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "discount",
+            "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_13",
+            "val": "Да",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_2",
+            "val": "На один домен + його піддомен",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_4",
+            "val": "PHP library CURL, PHP version 5.6 and higher",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_10",
+            "val": "Так",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[1]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_20[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_20[0]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_26",
+            "val": "See description",
+            "checked": false
+          },
+          {
+            "name": "radio_downloads_field_28__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_28",
+            "val": "0",
+            "checked": true
+          }
+        ]
+      },
+      "Характеристики": {
+        "npFieldCount": 86,
+        "meestFieldCount": 70,
+        "onlyOnNp": [
+          "file_description[1]",
+          "file_description[2]",
+          "file_cost[USD]",
+          "file_cost[UAH]",
+          "service[0][key]",
+          "service[0][value][USD]",
+          "service[0][value][UAH]",
+          "service[1][key]",
+          "service[1][value][USD]",
+          "service[1][value][UAH]",
+          "service[2][key]",
+          "service[2][value][USD]",
+          "service[2][value][UAH]",
+          "discount",
+          "downloads_field_12_checkbox",
+          "downloads_field_4"
+        ],
+        "valueDiffs": [
+          {
+            "name": "ref",
+            "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ=",
+            "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXQ="
+          },
+          {
+            "name": "plupload",
+            "np": "b2df98f99b0b1a10a21c19fae03f1f16",
+            "meest": "6a1c0fbce9a663513d2c00e5743e5bff"
+          },
+          {
+            "name": "file_tags",
+            "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+          },
+          {
+            "name": "file_primary_screenshot",
+            "np": "446150",
+            "meest": "446992"
+          },
+          {
+            "name": "file_lang_title[5]",
+            "np": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_lang_title[1]",
+            "np": "\"Nova poshta API\" - shipping module for OpenCart",
+            "meest": "\"Meest POSHTA\" - shipping module for OpenCart"
+          },
+          {
+            "name": "file_lang_title[2]",
+            "np": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "meest": "\"Meest ПОШТА\" - модуль доставки для OpenCart"
+          },
+          {
+            "name": "file_desc_short[5]",
+            "np": "<p>\n\t<span style=\"font-size:14px;\">Даний модуль по праву вважається кращим рішенням для організації доставки Нової пошти у Вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи із замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи з <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;vertical-align:baseline;",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє підключити доставку у відділення, поштomat або кур&#39;єром на адресу, автоматизувати створення ТТН, друк маркувань і відстеження відправлень.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[1]",
+            "np": "<p>\n\tThis module is rightfully considered the best solution for organizing the delivery of Nova poshta in your online store. The add-on solves almost all tasks that arise when working with Nova poshta and is an excellent assistant at any stage of work with orders. In addition to the standard functions of the delivery module, there are tools for working with <span style=\"font-size:14px;\"><span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-align:center;ver",
+            "meest": "<p>\n\tThe <strong>Meest POSHTA for <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> module connects department, parcel locker, and courier delivery, TTN creation, label printing, and shipment tracking.\n</p>\n"
+          },
+          {
+            "name": "file_desc_short[2]",
+            "np": "<p style=\"font-size:1.25rem;\">\n\t<span style=\"font-size:14px;\">Данный модуль по праву считается лучшим решением для организации доставки Новой Почтой в Вашем интернет-магазине. Дополнение решает практически все задачи, которые возникают при работе с Новой Почтой и является отличным помощником на любом этапе работы с заказами. Кроме стандартных функций модуля доставки имеются инструменты для работы с <span style=\"background-color:rgb(220,53,69);color:rgb(255,255,255);padding:0.25em 0.4em;text-alig",
+            "meest": "<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> подключает доставку в отделение, почтомат или курьером, автоматизирует создание ТТН, печать маркировок и отслеживание отправлений.\n</p>\n"
+          },
+          {
+            "name": "file_description[5]",
+            "np": "<div style=\"background-color:#e9ecef;color:#212529;font-size:16px;padding:4rem 2rem;text-align:left;\">\n\t<p style=\"color:#212529;font-size:1.25rem;\">\n\t\tЦей модуль по праву вважається найкращим рішенням для організації доставки <strong>Новою поштою</strong> у вашому інтернет-магазині. Доповнення вирішує практично всі завдання, які виникають при роботі з Новою поштою і є відмінним помічником на будь-якому етапі роботи з замовленнями. Крім стандартних функцій модуля доставки є інструменти для роботи",
+            "meest": "<p>\n\t<strong>Meest ПОШТА</strong> &mdash; український поштово-логістичний оператор із широкою мережею відділень, доступними тарифами, швидкою та надійною доставкою.\n</p>\n\n<p>\n\tМодуль <strong>Meest ПОШТА для <abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\"><abbr title=\"Бесплатная платформа для электронной коммерции с открытым исходным кодом\">OpenCart</abbr></abbr></strong> дозволяє легко підключити доставку до вашого інтернет-магазину та автоматизувати весь п"
+          },
+          {
+            "name": "downloads_field_26",
+            "np": "See description",
+            "meest": "default"
+          }
+        ],
+        "keyFields": [
+          {
+            "name": "file_tags",
+            "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "checked": false
+          },
+          {
+            "name": "file_tags_freechoice_prefix",
+            "val": "on",
+            "checked": true
+          },
+          {
+            "name": "file_tags_prefix",
+            "val": "oc-max",
+            "checked": false
+          },
+          {
+            "name": "downloads_category_select",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "downloads_categories",
+            "val": "2,6,66",
+            "checked": false
+          },
+          {
+            "name": "ukraine",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "ukraine_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "file_lang_title[5]",
+            "val": "\"Нова пошта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[1]",
+            "val": "\"Nova poshta API\" - shipping module for OpenCart",
+            "checked": false
+          },
+          {
+            "name": "file_lang_title[2]",
+            "val": "\"Новая почта API\" - модуль доставки для OpenCart",
+            "checked": false
+          },
+          {
+            "name": "radio_file_cost_type__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_cost_type",
+            "val": "paid",
+            "checked": true
+          },
+          {
+            "name": "file_cost[USD]",
+            "val": "25.00",
+            "checked": false
+          },
+          {
+            "name": "file_cost[UAH]",
+            "val": "1300.00",
+            "checked": false
+          },
+          {
+            "name": "service[0][key]",
+            "val": "Встановлення та оновлення",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[0][value][UAH]",
+            "val": "400.00",
+            "checked": false
+          },
+          {
+            "name": "service[1][key]",
+            "val": "Адаптація",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][USD]",
+            "val": "10",
+            "checked": false
+          },
+          {
+            "name": "service[1][value][UAH]",
+            "val": "600.00",
+            "checked": false
+          },
+          {
+            "name": "service[2][key]",
+            "val": "Підтримати проект",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][USD]",
+            "val": "7",
+            "checked": false
+          },
+          {
+            "name": "service[2][value][UAH]",
+            "val": "300.00",
+            "checked": false
+          },
+          {
+            "name": "radio_file_renewals__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewals",
+            "val": "0",
+            "checked": true
+          },
+          {
+            "name": "file_renewal_term[term]",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "file_renewal_term[unit]",
+            "val": "m",
+            "checked": false
+          },
+          {
+            "name": "min_quantity",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "discount",
+            "val": ">1=5;>10=7;>20=10;>30=15;>40=17;>50=20",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_13",
+            "val": "Да",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12",
+            "val": "0",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_12_checkbox",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_29[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_30[]",
+            "val": "Українська,Англійська,Російська",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_3[]",
+            "val": "3.0,2.3,2.2,2.1,2.0,1.5.6.4,1.5.6.3,1.5.6.2,1.5.6.1,1.5.6,1.5.5.1,1.5.5,1.5.4.1,1.5.3.1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_5[]",
+            "val": "3.0,2.3.0.2.4,2.3,2.2,2.1,1.5.5.1.2,1.5.5.1.1,1.5.5.1,1.5.4.1.2,1.5.4.1.1,1.5.4.1,1.5.3.1,1.5.2.1,1.5.1.3",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_9[]",
+            "val": "Opencart.pro 2.3,Opencart.pro 2.1,OcShop 2.0.3.х,OcShop 1.5.6.4.х",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_2",
+            "val": "На один домен + його піддомен",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_4",
+            "val": "PHP library CURL, PHP version 5.6 and higher",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_6[]",
+            "val": "За запитом в приватні повідомлення,За запитом на пошту,Автоматична активація,Через офіційний сайт доповнення",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_10",
+            "val": "Так",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_16[1]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_20[__EMPTY]",
+            "val": "__EMPTY",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_20[0]",
+            "val": "1",
+            "checked": true
+          },
+          {
+            "name": "downloads_field_26",
+            "val": "See description",
+            "checked": false
+          },
+          {
+            "name": "radio_downloads_field_28__empty",
+            "val": "1",
+            "checked": false
+          },
+          {
+            "name": "downloads_field_28",
+            "val": "0",
+            "checked": true
+          }
+        ]
+      },
+      "editTags": {
+        "npFieldCount": 19,
+        "meestFieldCount": 19,
+        "onlyOnNp": [],
+        "valueDiffs": [
+          {
+            "name": "ref",
+            "np": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzI1NDQtbm92YS1wb3NodGEtYXBpLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXRUYWdz",
+            "meest": "aHR0cHM6Ly9vcGVuY2FydGZvcnVtLmNvbS9maWxlcy9maWxlLzk2OTItbWVlc3QtcG9zaHRhLW1vZHVsLWRvc3Rhdmt5LWRsaWEtb3BlbmNhcnQvP2RvPWVkaXRUYWdz"
+          },
+          {
+            "name": "plupload",
+            "np": "c10b08255b4769b9d75be81d633bbfc7",
+            "meest": "e72186de53f526c09a5e272a4dce23be"
+          },
+          {
+            "name": "file_tags",
+            "np": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "meest": "oc-max\nmeest\nmeest poshta\nмодуль доставки\nмодуль доставки meest\nдоставка\nмодуль\nпечать накладных\nнакладные\nmeest poshta api\nmeest пошта\nmeest для opencart"
+          }
+        ],
+        "keyFields": [
+          {
+            "name": "file_tags",
+            "val": "oc-max\nновая почта\nмодуль доставки\nмодуль доставки новая почта\nдоставка\nмодуль\nпечать накладных\nнакладные\nновая почта api\nнова пошта\nнова пошта для опенкарт\nмодуль доставки нова пошта",
+            "checked": false
+          },
+          {
+            "name": "file_tags_freechoice_prefix",
+            "val": "on",
+            "checked": true
+          },
+          {
+            "name": "file_tags_prefix",
+            "val": "oc-max",
+            "checked": false
+          }
+        ]
+      }
+    }
+  },
+  "result": {
+    "editSaved": true,
+    "tagsSaved": true,
+    "newVerSaved": false,
+    "pub": {
+      "url": "https://opencartforum.com/files/file/9692-meest-poshta-modul-dostavky-dlia-opencart/",
+      "title": "\"Meest ПОШТА\" - модуль доставки для OpenCart - OpenCart Форум",
+      "h1": "\"Meest ПОШТА\" - модуль доставки для OpenCart",
+      "has1300": true,
+      "free": true,
+      "moderation": true,
+      "version": "0.1.0",
+      "zipSize": "14",
+      "stub12kb": false
+    }
+  }
+}

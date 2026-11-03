@@ -1,0 +1,244 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0.0 — дополнение для OpenCart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://oc-max.com" target="_blank">OC Max</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="nav-description" role="button" data-bs-toggle="dropdown" aria-expanded="false">Описание</a>
+                        <ul class="dropdown-menu" aria-labelledby="nav-description">
+                            <li><a class="dropdown-item link-goto" href="#opportunities">Возможности</a></li>
+                            <li><a class="dropdown-item link-goto" href="#languages">Языки</a></li>
+                            <li><a class="dropdown-item link-goto" href="#compatibility">Совместимость</a></li>
+                            <li><a class="dropdown-item link-goto" href="#license">Лицензия</a></li>
+                            <li><a class="dropdown-item link-goto" href="#requirements">Требования</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="nav-instruction" role="button" data-bs-toggle="dropdown" aria-expanded="false">Инструкция</a>
+                        <ul class="dropdown-menu" aria-labelledby="nav-instruction">
+                            <li><a class="dropdown-item link-goto" href="#installation">Установка</a></li>
+                            <li><a class="dropdown-item link-goto" href="#setting">Настройка</a></li>
+                            <li><a class="dropdown-item link-goto" href="#update">Обновление</a></li>
+                            <li><a class="dropdown-item link-goto" href="#remove">Удаление</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="nav-support" role="button" data-bs-toggle="dropdown" aria-expanded="false">Поддержка</a>
+                        <ul class="dropdown-menu" aria-labelledby="nav-support">
+                            <li><a class="dropdown-item link-goto" href="#faq">Вопросы/Ответы</a></li>
+                            <li><a class="dropdown-item link-goto" href="#changelog">Список изменений</a></li>
+                            <li><a class="dropdown-item link-goto" href="#contacts">Контакты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown me-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            RU
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="uk">UA</a></li>
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="en">EN</a></li>
+                            <li><a class="dropdown-item lang-switch" href="#" data-lang="ru">RU</a></li>
+                        </ul>
+                    </div>
+                    <input id="input-text_to_find" class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button id="button-search" class="btn btn-outline-primary">Поиск</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-light p-5 rounded-3">
+        <h1 class="display-3">Shipping Data Plus для OpenCart</h1>
+        <p class="lead">
+            Бесплатное дополнение под лицензией <span class="badge bg-success">MIT</span> для уже установленных модулей доставки OC Max (Новая почта, Укрпошта, Meest, Rozetka Delivery). Не заменяет модули перевозчиков и не требует собственных ключей API или лицензии OC Max: номера накладных берутся из полей заказа, проверка API и обновление городов/отделений используют настройки модуля перевозчика.
+        </p>
+        <p class="lead">
+            В админке — колонка <span class="badge bg-light text-dark">Отправление</span>, номер и трекинг на карточке заказа, меню в шапке и резервные копии справочников. В кабинете покупателя — тот же номер и ссылка отслеживания на сайте перевозчика.
+        </p>
+        <hr class="my-4">
+        <p class="lead text-center">
+            <a class="btn btn-primary btn-lg" href="http://oc3/admin/index.php?route=extension/module/shippingdata_plus" role="button" target="_blank">Настройки модуля (демо oc3)</a>
+            <a class="btn btn-primary btn-lg" href="http://oc3/" role="button" target="_blank">Магазин (демо)</a>
+        </p>
+    </div>
+
+    <h2 class="mb-3">Описание <small class="text-muted">(основное)</small></h2>
+
+    <div class="card bg-light mb-3" id="opportunities">
+        <div class="card-header">Функциональные возможности</div>
+        <div class="card-body">
+            <h6>Основное</h6>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-barcode fa-fw"></i> номер отправления в списке заказов, на карточке и в кабинете</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка перехода на официальный трекинг перевозчика</li>
+                <li><i class="far fa-copy fa-fw"></i> копирование номера в админ-списке и на карточке заказа</li>
+                <li><i class="fas fa-truck fa-fw"></i> меню в шапке: проверка API, обновление городов и отделений</li>
+                <li><i class="fas fa-database fa-fw"></i> резервная копия справочников каждого перевозчика с восстановлением</li>
+            </ul>
+            <div id="opportunities-admin-accordion">
+                <div class="item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#opportunities-admin-accordion-1" aria-expanded="false">подробнее...</a>
+                    <div id="opportunities-admin-accordion-1" class="collapse" role="tabpanel">
+                        <h6>Вкладка «Общие»</h6>
+                        <ul>
+                            <li><strong>Статус</strong>, <strong>Меню в шапке</strong>, <strong>Список заказов</strong>, <strong>Карточка заказа</strong>, <strong>Кабинет покупателя</strong></li>
+                        </ul>
+                        <h6>Вкладка «Резервные копии»</h6>
+                        <ul>
+                            <li>сохранение и восстановление справочников перевозчиков (таблицы <code>__sdp</code>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-3">
+                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_1.png" class="img-thumbnail d-block mb-2" alt="Настройки">
+                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_2.png" class="img-thumbnail d-block mb-2" alt="Список заказов">
+                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_3.png" class="img-thumbnail d-block mb-2" alt="Карточка заказа">
+                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_4.png" class="img-thumbnail d-block mb-2" alt="История заказов">
+                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_5.png" class="img-thumbnail d-block" alt="Заказ в кабинете">
+            </p>
+        </div>
+    </div>
+    <div class="card bg-light mb-3" id="languages">
+        <div class="card-header">Поддерживаемые языки</div>
+        <div class="card-body"><ul><li>украинский</li><li>английский</li><li>русский</li></ul></div>
+    </div>
+    <div class="card bg-light mb-3" id="compatibility">
+        <div class="card-header">Совместимость</div>
+        <div class="card-body">
+            <ul>
+                <li>OpenCart 3.x; 1.5.x — пункт меню «Shipping Data Plus» рядом с «Выход»</li>
+                <li>нужен хотя бы один включённый модуль доставки OC Max</li>
+            </ul>
+            <p><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_7.png" class="img-thumbnail" alt="Меню OpenCart 1.5"></p>
+        </div>
+    </div>
+    <div class="card bg-light mb-3" id="license">
+        <div class="card-header">Лицензия</div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                <li><i class="fas fa-gift"></i> бесплатно по <strong>MIT</strong></li>
+                <li><i class="fas fa-unlock"></i> ключ лицензии OC Max и ключи API модуля не требуются</li>
+                <li><a href="https://oc-max.com/docs/shippingdata-plus/license.md" target="_blank">license.md</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card bg-light mb-3" id="requirements">
+        <div class="card-header">Требования</div>
+        <div class="card-body">
+            <ul>
+                <li>PHP 7.2+</li>
+                <li>настроенный модуль перевозчика</li>
+                <li>обновление кеша модификаций после OCMOD</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="mb-3">Инструкция</h2>
+
+    <div class="card bg-light mb-3" id="installation">
+        <div class="card-header">Установка</div>
+        <div class="card-body">
+            <ol>
+                <li>Загрузите папку <span class="badge bg-info">upload</span> в корень сайта.</li>
+                <li>Установите OCMOD и обновите модификации.</li>
+                <li>Дополнения → Модули → установите <strong>Shipping Data Plus</strong>, включите и сохраните.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="card bg-light mb-3" id="setting">
+        <div class="card-header">Настройка</div>
+        <div class="card-body">
+            <p>Модификатор <code>shippingdata_plus.ocmod.xml</code> добавляет колонку, блок на карточке заказа, кабинет покупателя и меню в шапке. Каждую поверхность можно отключить отдельно.</p>
+        </div>
+    </div>
+
+    <div class="card bg-light mb-3" id="update">
+        <div class="card-header">Обновление</div>
+        <div class="card-body">
+            <ol>
+                <li>Резервная копия файлов и БД.</li>
+                <li>Замена файлов, обновление OCMOD.</li>
+                <li>Проверка переключателей и сохранение.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="card bg-light mb-3" id="remove">
+        <div class="card-header">Удаление</div>
+        <div class="card-body">
+            <ol>
+                <li>Удалить модификатор и обновить кеш.</li>
+                <li>Удалить модуль в списке модулей.</li>
+                <li>Удалить файлы с сервера.</li>
+            </ol>
+        </div>
+    </div>
+
+    <h2 class="mb-3">Поддержка</h2>
+
+    <div class="card bg-light mb-3" id="faq">
+        <div class="card-header">Вопросы/Ответы</div>
+        <div class="card-body">
+            <div class="accordion" id="faq-accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-heading-1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true">Почему не видно номера отправления?</button>
+                    </h2>
+                    <div id="faq-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">Проверьте статус модуля, переключатели поверхностей, поле накладной у перевозчика, совместимый способ доставки и кеш модификаций.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-heading-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-2">Нужен ли ключ API?</button>
+                    </h2>
+                    <div id="faq-collapse-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">Нет. Используются ключи модуля перевозчика.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-heading-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3">Где меню на OpenCart 1.5?</button>
+                    </h2>
+                    <div id="faq-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">Пункт <strong>Shipping Data Plus</strong> в верхнем меню. На карточке заказа — вкладка адреса доставки.
+                            <p class="mt-2"><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_8.png" class="img-thumbnail" alt="Карточка заказа 1.5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-light mb-3" id="changelog">
+        <div class="card-header">Список изменений</div>
+        <div class="card-body">
+            <kbd>v. 1.0.0 от 03.11.2026:</kbd>
+            <ul>
+                <li>первый выпуск: ТТН и трекинг, меню в шапке, резервные копии справочников</li>
+                <li>лицензия MIT</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card bg-light mb-3" id="contacts">
+        <div class="card-header">Контакты</div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                <li><i class="fab fa-telegram"></i> <a href="https://t.me/opencart_max" target="_blank">Telegram</a></li>
+                <li><i class="far fa-envelope"></i> <a href="mailto:ocmax.helper@gmail.com">ocmax.helper@gmail.com</a></li>
+                <li><i class="fas fa-globe"></i> <a href="https://oc-max.com" target="_blank">oc-max.com</a></li>
+            </ul>
+        </div>
+    </div>
