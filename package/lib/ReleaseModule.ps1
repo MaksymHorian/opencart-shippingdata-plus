@@ -1288,8 +1288,12 @@ function Invoke-ModuleInstructionBuild {
             throw "instructionSource not found: $prebuilt"
         }
         $destDocs = Join-Path $paths.DocsSource 'instruction.html'
-        Ensure-Dir (Split-Path $destDocs -Parent)
-        Copy-Item $prebuilt $destDocs -Force
+        $prebuiltFull = (Resolve-Path $prebuilt).Path
+        $destFull = if (Test-Path $destDocs) { (Resolve-Path $destDocs).Path } else { $destDocs }
+        if ($prebuiltFull -ne $destFull) {
+            Ensure-Dir (Split-Path $destDocs -Parent)
+            Copy-Item $prebuilt $destDocs -Force
+        }
         Write-Host "Instruction (prebuilt): $destDocs"
         $instructionBuilt = $true
     }
