@@ -18,7 +18,7 @@
         <div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0.0 — доповнення для OpenCart</a>
+            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0 — доповнення для OpenCart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -76,7 +76,7 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus для OpenCart</h1>
         <p class="lead">
-            Це доповнення для магазинів, які вже використовують модулі доставки OC Max і не планують оновлювати їх найближчим часом або не можуть оновити їх з технічних причин. Той самий функціонал з’явиться в майбутніх оновленнях цих модулів доставки. Воно працює разом із такими модулями:
+            Це доповнення для магазинів, які вже використовують модулі доставки OC Max і не планують оновлювати їх найближчим часом або не можуть оновити їх з технічних причин. Той самий функціонал з’явиться в майбутніх оновленнях цих модулів доставки. Доповнення працює разом із такими модулями:
         </p>
         <ul class="lead">
             <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
@@ -84,6 +84,9 @@
             <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
             <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
         </ul>
+        <p class="lead">
+            Доповнення сумісне з модулем <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a>.
+        </p>
         <p class="lead">
             Доповнення не замінює ці модулі. Номери накладних беруться з полів замовлення, які модулі перевізників уже зберігають. Перевірка API та оновлення міст і відділень використовує налаштування відповідного модуля доставки.
         </p>
@@ -98,13 +101,13 @@
         <div class="card-header">Функціональні можливості</div>
         <div class="card-body">
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> показ номера відправлення (ТТН) у списку замовлень адмінки, на картці замовлення та в кабінеті покупця</li>
-                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка переходу на офіційний трекінг перевізника в кольорі бренду</li>
-                <li><i class="far fa-copy fa-fw"></i> копіювання сирого номера в адмін-списку та на картці замовлення</li>
-                <li><i class="fas fa-truck fa-fw"></i> меню в шапці адмінки: перевірка API, оновлення міст і відділень для увімкнених перевізників</li>
-                <li><i class="fas fa-sliders-h fa-fw"></i> окремі перемикачі для кожної поверхні: статус модуля, меню в шапці, список замовлень, картка замовлення, кабінет покупця</li>
+                <li><i class="fas fa-barcode fa-fw"></i> показ номера відправлення (ТТН) у списку замовлень адмін-панелі, на картці замовлення та в кабінеті покупця</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка переходу на офіційний трекінг перевізника</li>
+                <li><i class="far fa-copy fa-fw"></i> копіювання номеру ТТН у списку замовлень та на картці замовлення</li>
+                <li><i class="fas fa-truck fa-fw"></i> меню у верхній навігаційній панелі адмін-панелі: перевірка API, оновлення міст і відділень для увімкнених перевізників</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> окремі перемикачі для кожного розділу: статус модуля, меню у верхній навігаційній панелі, список замовлень, картка замовлення, кабінет покупця</li>
                 <li><i class="fas fa-database fa-fw"></i> одна резервна копія довідників кожного перевізника з можливістю відновлення</li>
-                <li><i class="fas fa-info-circle fa-fw"></i> якщо увімкнено Nova Poshta PRO і його колонка в списку замовлень уже заповнена, модуль доповнює лише порожні комірки; на картці замовлення номер не показується для замовлень, якими керує Nova Poshta PRO</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> якщо увімкнено модуль <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a> і його колонка в списку замовлень уже заповнена, модуль доповнює лише порожні комірки; на картці замовлення номер не показується для замовлень, якими керує Nova Poshta PRO</li>
             </ul>
         </div>
     </div>
@@ -123,8 +126,8 @@
         <div class="card-header">Сумісність</div>
         <div class="card-body">
             <ul>
-                <li>OpenCart 3.x (основна розробка); OpenCart 1.5.x / 2.x — через поширення пакета (меню в шапці на 1.5.x — текстовий пункт «Shipping Data Plus»)</li>
-                <li>потрібен хоча б один увімкнений модуль доставки OC Max: Nova Poshta, Ukrposhta, Meest або Rozetka Delivery</li>
+                <li>OpenCart v. 1.5.Х.Х, 2.X.X.Х, 3.Х.Х.Х (а також збірки на базі OpenCart відповідних версій)</li>
+                <li>потрібен хоча б один увімкнений модуль доставки OC Max: <a href="https://opencartforum.com/files/file/2544-nova-poshta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta API</a>, <a href="https://opencartforum.com/files/file/6293-ukrposhta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Ukrposhta API</a>, <a href="https://opencartforum.com/files/file/9692-meest-poshta-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Meest</a> або <a href="https://opencartforum.com/files/file/9261-rozetka-delivery-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
                 <li>не змінює PHP модулів Shipping Data або перевізників — лише OCMOD-патчі інтерфейсу</li>
             </ul>
         </div>
@@ -134,8 +137,7 @@
         <div class="card-body">
             <ul>
                 <li>PHP 7.2+ (рекомендовано для OpenCart 3.x)</li>
-                <li>встановлений і налаштований модуль доставки перевізника (API-ключі — у модулі перевізника, не тут)</li>
-                <li>після завантаження OCMOD — оновлення кешу модифікацій</li>
+                <li>встановлений і налаштований модуль доставки перевізника</li>
             </ul>
         </div>
     </div>
@@ -151,14 +153,14 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Перед встановленням на робочому магазині протестуйте на копії сайту!
             </div>
-            <p class="mb-3">Оберіть папку дистрибутива під вашу версію OpenCart. У <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> та <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежать <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> і <code>upload/</code> всередині) і папка <code>upload/</code>. Модифікатор — у теці <code>modification/</code>: для OpenCart 3 це <code>shippingdata_plus.ocmod.zip</code> (усередині лише <code>install.xml</code>), для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — лише ручне копіювання (див. нижче).</p>
+            <p class="mb-3">Оберіть папку дистрибутива під вашу версію OpenCart. У <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> та <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежать <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> і <code>upload/</code> всередині) і папка <code>upload/</code>. Модифікатор — у теці <code>modification/</code>: для OpenCart 3 це <code>shippingdata_plus.ocmod.zip</code>, для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — лише ручне копіювання (див. нижче).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x — основний шлях</h6>
             <ol>
                 <li><span class="badge bg-info">Додатки → Встановлення доповнень</span> — завантажте <code>shippingdata_plus.ocmod.zip</code> з папки вашої версії.</li>
                 <li><span class="badge bg-info">Додатки → Модифікації</span> — натисніть <span class="text-success">«Оновити»</span>.</li>
                 <li><span class="badge bg-info">Додатки → Модулі</span> — знайдіть <strong>Shipping Data Plus</strong>, натисніть <span class="text-success">«Встановити»</span>, потім <span class="text-primary">«Редагувати»</span>.</li>
-                <li>Увімкніть модуль і потрібні поверхні; натисніть <span class="text-success">«Зберегти»</span>.</li>
+                <li>Увімкніть модуль і потрібні розділи; натисніть <span class="text-success">«Зберегти»</span>, щоб зберегти налаштування.</li>
             </ol>
 
             <h6 class="mt-4">Якщо архів не встановлюється</h6>
@@ -168,10 +170,10 @@
                 <li><span class="badge bg-info">Додатки → Встановлення доповнень</span> — завантажте модифікатор:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 і 2.3:</strong> завантажте <code>modification/shippingdata_plus.ocmod.xml</code> (інсталятор приймає окремий файл <code>.ocmod.xml</code>).</li>
-                        <li><strong>OpenCart 3.x:</strong> інсталятор приймає лише <code>.ocmod.zip</code>. Завантажте <code>modification/shippingdata_plus.ocmod.zip</code> — усередині лише <code>install.xml</code>. Потім <span class="badge bg-info">Додатки → Модифікації</span> — <span class="text-success">«Оновити»</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> інсталятор приймає лише <code>.ocmod.zip</code>. Завантажте <code>modification/shippingdata_plus.ocmod.zip</code>. Потім <span class="badge bg-info">Додатки → Модифікації</span> — <span class="text-success">«Оновити»</span>.</li>
                     </ul>
                 </li>
-                <li><span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і <span class="text-success">збережіть</span>.</li>
+                <li><span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і збережіть налаштування (<span class="text-success">«Зберегти»</span>).</li>
             </ol>
 
             <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
@@ -179,7 +181,7 @@
             <ol>
                 <li>Скопіюйте вміст папки <span class="badge bg-info">upload</span> з пакета <strong>OpenCart 1.5.X.X</strong> у корінь сайту (FTP або менеджер файлів хостингу).</li>
                 <li>Скопіюйте <code>modification/shippingdata_plus.xml</code> у <code>vqmod/xml/</code> на сервері.</li>
-                <li>У адмін-панелі: <span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і <span class="text-success">збережіть</span>.</li>
+                <li>У адмін-панелі: <span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і збережіть налаштування (<span class="text-success">«Зберегти»</span>).</li>
             </ol>
         </div>
     </div>
@@ -187,14 +189,14 @@
     <div class="card bg-light mb-3" id="setting">
         <div class="card-header">Налаштування</div>
         <div class="card-body">
-            <p>Модифікатор <code>shippingdata_plus</code> (файл <code>system/shippingdata_plus.ocmod.xml</code>) додає:</p>
+            <p>Модифікатор <code>shippingdata_plus</code> додає:</p>
             <ul>
                 <li>колонку відправлення в списку замовлень;</li>
                 <li>блок номера/трекінгу на картці замовлення;</li>
                 <li>колонку та рядок у кабінеті покупця;</li>
-                <li>меню в шапці адміністратора.</li>
+                <li>меню в верхній навігаційній панелі адміністратора.</li>
             </ul>
-            <p>Кожну поверхню можна вимкнути окремим перемикачем, якщо модуль увімкнено глобально.</p>
+            <p>Кожен розділ можна вимкнути окремим перемикачем, якщо модуль увімкнено глобально.</p>
             <p>Резервні копії довідників не включають таблиці накладних чи реєстрів — лише міста, відділення, області та довідники перевізника з whitelist модуля.</p>
         </div>
     </div>
@@ -206,7 +208,7 @@
                 <li>Зробіть резервну копію файлів і бази даних.</li>
                 <li>За бажанням збережіть резервні копії довідників на вкладці «Резервні копії».</li>
                 <li>Замініть файли з нового архіву, оновіть OCMOD і кеш модифікацій.</li>
-                <li>Перевірте перемикачі на вкладці «Загальні» і збережіть.</li>
+                <li>Перевірте перемикачі на вкладці «Загальні» і збережіть налаштування.</li>
             </ol>
         </div>
     </div>
@@ -216,7 +218,7 @@
         <div class="card-body">
             <ol>
                 <li>Видаліть модифікатор Shipping Data Plus і оновіть кеш модифікацій.</li>
-                <li><span class="badge bg-info">Додатки → Модулі</span> — «Видалити» навпроти Shipping Data Plus (видаляються shadow-таблиці <code>__sdp</code> / <code>__aside</code> і налаштування модуля).</li>
+                <li><span class="badge bg-info">Додатки → Модулі</span> — «Видалити» навпроти Shipping Data Plus.</li>
                 <li>Видаліть файли модуля з сервера.</li>
             </ol>
             <p>Таблиці довідників перевізників (<code>novaposhta_*</code>, <code>ukrposhta_*</code> тощо) залишаються без змін.</p>
@@ -241,7 +243,7 @@
                     <div id="faq-collapse-1" class="accordion-collapse collapse show" aria-labelledby="faq-heading-1" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
                             <ul>
-                                <li>модуль Shipping Data Plus вимкнено або вимкнено потрібну поверхню (список, картка, кабінет);</li>
+                                <li>модуль Shipping Data Plus вимкнено або вимкнено потрібний розділ (список, картка, кабінет);</li>
                                 <li>у замовлення немає номера в полі перевізника (<code>{carrier}_cn_number</code>) або спосіб доставки не сумісний з модулем перевізника;</li>
                                 <li>не оновлено кеш модифікацій після встановлення OCMOD.</li>
                             </ul>
@@ -279,9 +281,9 @@
     <div class="card bg-light mb-3" id="changelog">
         <div class="card-header">Список змін</div>
         <div class="card-body">
-            <kbd>v. 1.0.0 від 03.11.2026:</kbd>
+            <kbd>v. 1.0 від 03.11.2026:</kbd>
             <ul>
-                <li>перший публічний випуск: TTN і трекінг в адмінці та кабінеті, меню швидких дій, резервні копії довідників перевізників</li>
+                <li>перший публічний реліз</li>
             </ul>
         </div>
     </div>
@@ -303,7 +305,7 @@
         <div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0.0 — extension for OpenCart</a>
+            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0 — extension for OpenCart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -361,7 +363,7 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus for OpenCart</h1>
         <p class="lead">
-            This add-on is for shops that already use OC Max delivery modules and do not plan to update them soon, or cannot update them for technical reasons. The same functionality will be added in future updates of those delivery modules. It works alongside:
+            This add-on is for shops that already use OC Max delivery modules and do not plan to update them soon, or cannot update them for technical reasons. The same functionality will be added in future updates of those delivery modules. The extension works with these modules:
         </p>
         <ul class="lead">
             <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
@@ -369,6 +371,9 @@
             <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
             <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
         </ul>
+        <p class="lead">
+            The extension is compatible with the <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a> module.
+        </p>
         <p class="lead">
             It does not replace those modules. Waybill numbers come from the order fields the carrier modules already store. API check and city/department refresh use each carrier module’s own settings.
         </p>
@@ -380,13 +385,13 @@
         <div class="card-header">Features</div>
         <div class="card-body">
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> consignment number (TTN) in the admin order list, on the order page, and in the customer account</li>
-                <li><i class="fas fa-external-link-alt fa-fw"></i> brand-colored tracking button to the carrier’s public tracker</li>
-                <li><i class="far fa-copy fa-fw"></i> copy of the raw number in admin list and order info</li>
-                <li><i class="fas fa-truck fa-fw"></i> admin header menu: API check, city and department refresh for enabled carriers</li>
-                <li><i class="fas fa-sliders-h fa-fw"></i> per-surface toggles: module status, header menu, order list, order page, customer account</li>
+                <li><i class="fas fa-barcode fa-fw"></i> consignment number (TTN) in the admin panel order list, on the order page, and in the customer account</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> tracking button to the carrier’s public tracker</li>
+                <li><i class="far fa-copy fa-fw"></i> copy of the TTN number in the order list and on the order page</li>
+                <li><i class="fas fa-truck fa-fw"></i> menu in the upper admin navigation panel: API check, city and department refresh for enabled carriers</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> per-section toggles: module status, menu in the upper admin navigation panel, order list, order page, customer account</li>
                 <li><i class="fas fa-database fa-fw"></i> one directory backup per carrier with restore</li>
-                <li><i class="fas fa-info-circle fa-fw"></i> when Nova Poshta PRO is enabled and its order-list column is already filled, this module only fills empty cells; TTN is not shown on the order page for orders managed by Nova Poshta PRO</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> when the <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a> module is enabled and its order-list column is already filled, this module only fills empty cells; TTN is not shown on the order page for orders managed by Nova Poshta PRO</li>
             </ul>
         </div>
     </div>
@@ -400,8 +405,8 @@
         <div class="card-header">Compatibility</div>
         <div class="card-body">
             <ul>
-                <li>OpenCart 3.x (primary); 1.5.x / 2.x via package propagation — on 1.5.x the header item is the text menu “Shipping Data Plus”</li>
-                <li>requires at least one enabled OC Max carrier shipping module</li>
+                <li>OpenCart v. 1.5.x.x, 2.x.x.x, 3.x.x.x (as well as OpenCart-based builds of corresponding versions)</li>
+                <li>requires at least one enabled OC Max delivery module: <a href="https://opencartforum.com/files/file/2544-nova-poshta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta API</a>, <a href="https://opencartforum.com/files/file/6293-ukrposhta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Ukrposhta API</a>, <a href="https://opencartforum.com/files/file/9692-meest-poshta-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Meest</a>, or <a href="https://opencartforum.com/files/file/9261-rozetka-delivery-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
                 <li>UI-only OCMOD — does not patch carrier PHP</li>
             </ul>
         </div>
@@ -411,8 +416,7 @@
         <div class="card-body">
             <ul>
                 <li>PHP 7.2+ recommended for OpenCart 3.x</li>
-                <li>configured carrier shipping module (API keys live there)</li>
-                <li>refresh modifications cache after OCMOD install</li>
+                <li>installed and configured carrier delivery module</li>
             </ul>
         </div>
     </div>
@@ -425,14 +429,14 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Before installing on a live store, test on a copy of the site!
             </div>
-            <p class="mb-3">Pick the package folder that matches your OpenCart version. In <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong>, and <strong>OpenCart 2.0.0.0-2.2.0.0</strong> you will find <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> and <code>upload/</code> inside) and the <code>upload/</code> folder. The modifier is in <code>modification/</code>: OpenCart 3 uses <code>shippingdata_plus.ocmod.zip</code> (only <code>install.xml</code> inside); 2.x uses <code>shippingdata_plus.ocmod.xml</code>. OpenCart 1.5.x uses manual file copy only (see below).</p>
+            <p class="mb-3">Pick the package folder that matches your OpenCart version. In <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong>, and <strong>OpenCart 2.0.0.0-2.2.0.0</strong> you will find <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> and <code>upload/</code> inside) and the <code>upload/</code> folder. The modifier is in <code>modification/</code>: OpenCart 3 uses <code>shippingdata_plus.ocmod.zip</code>; 2.x uses <code>shippingdata_plus.ocmod.xml</code>. OpenCart 1.5.x uses manual file copy only (see below).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0 through 2.2.x — primary path</h6>
             <ol>
                 <li><span class="badge bg-info">Extensions → Installer</span> — upload <code>shippingdata_plus.ocmod.zip</code> from your version folder.</li>
                 <li><span class="badge bg-info">Extensions → Modifications</span> — click <span class="text-success">Refresh</span>.</li>
                 <li><span class="badge bg-info">Extensions → Modules</span> — find <strong>Shipping Data Plus</strong>, click <span class="text-success">Install</span>, then <span class="text-primary">Edit</span>.</li>
-                <li>Enable the module and the surfaces you need; <span class="text-success">Save</span>.</li>
+                <li>Enable the module and the sections you need; click <span class="text-success">Save</span> to save the settings.</li>
             </ol>
 
             <h6 class="mt-4">If the zip does not install</h6>
@@ -442,10 +446,10 @@
                 <li><span class="badge bg-info">Extensions → Installer</span> — load the modifier:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 and 2.3:</strong> upload <code>modification/shippingdata_plus.ocmod.xml</code> (the installer accepts a bare <code>.ocmod.xml</code> file).</li>
-                        <li><strong>OpenCart 3.x:</strong> the installer accepts only <code>.ocmod.zip</code>. Upload <code>modification/shippingdata_plus.ocmod.zip</code> — it contains only <code>install.xml</code>. Then <span class="badge bg-info">Extensions → Modifications</span> — <span class="text-success">Refresh</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> the installer accepts only <code>.ocmod.zip</code>. Upload <code>modification/shippingdata_plus.ocmod.zip</code>. Then <span class="badge bg-info">Extensions → Modifications</span> — <span class="text-success">Refresh</span>.</li>
                     </ul>
                 </li>
-                <li><span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and <span class="text-success">Save</span>.</li>
+                <li><span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and save the settings (<span class="text-success">Save</span>).</li>
             </ol>
 
             <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
@@ -453,7 +457,7 @@
             <ol>
                 <li>Copy the contents of the <span class="badge bg-info">upload</span> folder from the <strong>OpenCart 1.5.X.X</strong> package to the shop root (FTP or hosting file manager).</li>
                 <li>Copy <code>modification/shippingdata_plus.xml</code> into <code>vqmod/xml/</code> on the server.</li>
-                <li>In admin: <span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and <span class="text-success">Save</span>.</li>
+                <li>In the admin panel: <span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and save the settings (<span class="text-success">Save</span>).</li>
             </ol>
         </div>
     </div>
@@ -461,7 +465,7 @@
     <div class="card bg-light mb-3" id="setting">
         <div class="card-header">Configuration</div>
         <div class="card-body">
-            <p>Modifier <code>shippingdata_plus.ocmod.xml</code> hooks order list, order info, customer account templates, and admin header. Each surface can be toggled independently.</p>
+            <p>Modifier <code>shippingdata_plus</code> adds hooks for the order list, order info, customer account templates, and the upper admin navigation panel menu. Each section can be toggled independently.</p>
         </div>
     </div>
 
@@ -471,7 +475,7 @@
             <ol>
                 <li>Backup files and database.</li>
                 <li>Replace module files; refresh OCMOD cache.</li>
-                <li>Review General tab switches and Save.</li>
+                <li>Review the switches on the General tab and save the settings.</li>
             </ol>
         </div>
     </div>
@@ -498,7 +502,7 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true">Why is the shipment number missing?</button>
                     </h2>
                     <div id="faq-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
-                        <div class="accordion-body">Check module status, surface toggles, carrier CN field on the order, compatible shipping method, and modifications cache.</div>
+                        <div class="accordion-body">Check module status, section toggles, carrier CN field on the order, compatible shipping method, and modifications cache.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -524,9 +528,9 @@
     <div class="card bg-light mb-3" id="changelog">
         <div class="card-header">Changelog</div>
         <div class="card-body">
-            <kbd>v. 1.0.0 from 03.11.2026:</kbd>
+            <kbd>v. 1.0 from 03.11.2026:</kbd>
             <ul>
-                <li>initial release: TTN and tracking in admin and account, header tools, carrier directory backups</li>
+                <li>first public release</li>
             </ul>
         </div>
     </div>
@@ -548,7 +552,7 @@
         <div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0.0 — дополнение для OpenCart</a>
+            <a class="navbar-brand" href="#"><i class="fab fa-opencart"></i> «Shipping Data Plus» v. 1.0 — дополнение для OpenCart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -606,7 +610,7 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus для OpenCart</h1>
         <p class="lead">
-            Это дополнение для магазинов, которые уже используют модули доставки OC Max и не планируют обновлять их в ближайшее время или не могут обновить их по техническим причинам. Тот же функционал появится в будущих обновлениях этих модулей доставки. Оно работает вместе с модулями:
+            Это дополнение для магазинов, которые уже используют модули доставки OC Max и не планируют обновлять их в ближайшее время или не могут обновить их по техническим причинам. Тот же функционал появится в будущих обновлениях этих модулей доставки. Дополнение работает вместе с такими модулями:
         </p>
         <ul class="lead">
             <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
@@ -614,6 +618,9 @@
             <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
             <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
         </ul>
+        <p class="lead">
+            Дополнение совместимо с модулем <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a>.
+        </p>
         <p class="lead">
             Дополнение не заменяет эти модули. Номера накладных берутся из полей заказа, которые модули перевозчиков уже сохраняют. Проверка API и обновление городов и отделений используют настройки соответствующего модуля доставки.
         </p>
@@ -625,13 +632,13 @@
         <div class="card-header">Функциональные возможности</div>
         <div class="card-body">
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> номер отправления (ТТН) в списке заказов админки, на карточке заказа и в кабинете покупателя</li>
-                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка перехода на официальный трекинг перевозчика в цвете бренда</li>
-                <li><i class="far fa-copy fa-fw"></i> копирование исходного номера в админ-списке и на карточке заказа</li>
-                <li><i class="fas fa-truck fa-fw"></i> меню в шапке админки: проверка API, обновление городов и отделений для включённых перевозчиков</li>
-                <li><i class="fas fa-sliders-h fa-fw"></i> отдельные переключатели для каждой поверхности: статус модуля, меню в шапке, список заказов, карточка заказа, кабинет покупателя</li>
+                <li><i class="fas fa-barcode fa-fw"></i> номер отправления (ТТН) в списке заказов админ-панели, на карточке заказа и в кабинете покупателя</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка перехода на официальный трекинг перевозчика</li>
+                <li><i class="far fa-copy fa-fw"></i> копирование номера ТТН в списке заказов и на карточке заказа</li>
+                <li><i class="fas fa-truck fa-fw"></i> меню в верхней навигационной панели админ-панели: проверка API, обновление городов и отделений для включённых перевозчиков</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> отдельные переключатели для каждого раздела: статус модуля, меню в верхней навигационной панели, список заказов, карточка заказа, кабинет покупателя</li>
                 <li><i class="fas fa-database fa-fw"></i> одна резервная копия справочников каждого перевозчика с восстановлением</li>
-                <li><i class="fas fa-info-circle fa-fw"></i> если включён Nova Poshta PRO и его колонка в списке заказов уже заполнена, модуль дополняет только пустые ячейки; на карточке заказа номер не показывается для заказов, которыми управляет Nova Poshta PRO</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> если включён модуль <a href="https://opencartforum.com/files/file/9693-nova-poshta-pro-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta PRO</a> и его колонка в списке заказов уже заполнена, модуль дополняет только пустые ячейки; на карточке заказа номер не показывается для заказов, которыми управляет Nova Poshta PRO</li>
             </ul>
         </div>
     </div>
@@ -643,8 +650,8 @@
         <div class="card-header">Совместимость</div>
         <div class="card-body">
             <ul>
-                <li>OpenCart 3.x; 1.5.x — пункт меню «Shipping Data Plus» рядом с «Выход»</li>
-                <li>нужен хотя бы один включённый модуль доставки OC Max</li>
+                <li>OpenCart v. 1.5.x.x, 2.x.x.x, 3.x.x.x (а также сборки на базе OpenCart соответствующих версий)</li>
+                <li>нужен хотя бы один включённый модуль доставки OC Max: <a href="https://opencartforum.com/files/file/2544-nova-poshta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Nova Poshta API</a>, <a href="https://opencartforum.com/files/file/6293-ukrposhta-api-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Ukrposhta API</a>, <a href="https://opencartforum.com/files/file/9692-meest-poshta-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Meest</a> или <a href="https://opencartforum.com/files/file/9261-rozetka-delivery-modul-dostavky-dlia-opencart/" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
             </ul>
         </div>
     </div>
@@ -652,9 +659,8 @@
         <div class="card-header">Требования</div>
         <div class="card-body">
             <ul>
-                <li>PHP 7.2+</li>
-                <li>настроенный модуль перевозчика</li>
-                <li>обновление кеша модификаций после OCMOD</li>
+                <li>PHP 7.2+ (рекомендуется для OpenCart 3.x)</li>
+                <li>установленный и настроенный модуль доставки перевозчика</li>
             </ul>
         </div>
     </div>
@@ -667,14 +673,14 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Перед установкой на рабочем магазине протестируйте на копии сайта!
             </div>
-            <p class="mb-3">Выберите папку дистрибутива под вашу версию OpenCart. В <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> и <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежат <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> и <code>upload/</code> внутри) и папка <code>upload/</code>. Модификатор — в папке <code>modification/</code>: для OpenCart 3 это <code>shippingdata_plus.ocmod.zip</code> (внутри только <code>install.xml</code>), для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — только ручное копирование (см. ниже).</p>
+            <p class="mb-3">Выберите папку дистрибутива под вашу версию OpenCart. В <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> и <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежат <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> и <code>upload/</code> внутри) и папка <code>upload/</code>. Модификатор — в папке <code>modification/</code>: для OpenCart 3 это <code>shippingdata_plus.ocmod.zip</code>, для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — только ручное копирование (см. ниже).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x — основной путь</h6>
             <ol>
                 <li><span class="badge bg-info">Дополнения → Установка</span> — загрузите <code>shippingdata_plus.ocmod.zip</code> из папки вашей версии.</li>
                 <li><span class="badge bg-info">Дополнения → Модификации</span> — нажмите <span class="text-success">«Обновить»</span>.</li>
                 <li><span class="badge bg-info">Дополнения → Модули</span> — найдите <strong>Shipping Data Plus</strong>, нажмите <span class="text-success">«Установить»</span>, затем <span class="text-primary">«Редактировать»</span>.</li>
-                <li>Включите модуль и нужные поверхности; <span class="text-success">сохраните</span>.</li>
+                <li>Включите модуль и нужные разделы; нажмите <span class="text-success">«Сохранить»</span>, чтобы сохранить настройки.</li>
             </ol>
 
             <h6 class="mt-4">Если архив не устанавливается</h6>
@@ -684,10 +690,10 @@
                 <li><span class="badge bg-info">Дополнения → Установка</span> — загрузите модификатор:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 и 2.3:</strong> загрузите <code>modification/shippingdata_plus.ocmod.xml</code> (установщик принимает отдельный файл <code>.ocmod.xml</code>).</li>
-                        <li><strong>OpenCart 3.x:</strong> установщик принимает только <code>.ocmod.zip</code>. Загрузите <code>modification/shippingdata_plus.ocmod.zip</code> — внутри только <code>install.xml</code>. Затем <span class="badge bg-info">Дополнения → Модификации</span> — <span class="text-success">«Обновить»</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> установщик принимает только <code>.ocmod.zip</code>. Загрузите <code>modification/shippingdata_plus.ocmod.zip</code>. Затем <span class="badge bg-info">Дополнения → Модификации</span> — <span class="text-success">«Обновить»</span>.</li>
                     </ul>
                 </li>
-                <li><span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и <span class="text-success">сохраните</span>.</li>
+                <li><span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и сохраните настройки (<span class="text-success">«Сохранить»</span>).</li>
             </ol>
 
             <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
@@ -695,7 +701,7 @@
             <ol>
                 <li>Скопируйте содержимое папки <span class="badge bg-info">upload</span> из пакета <strong>OpenCart 1.5.X.X</strong> в корень сайта (FTP или файловый менеджер хостинга).</li>
                 <li>Скопируйте <code>modification/shippingdata_plus.xml</code> в <code>vqmod/xml/</code> на сервере.</li>
-                <li>В админ-панели: <span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и <span class="text-success">сохраните</span>.</li>
+                <li>В админ-панели: <span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и сохраните настройки (<span class="text-success">«Сохранить»</span>).</li>
             </ol>
         </div>
     </div>
@@ -703,7 +709,7 @@
     <div class="card bg-light mb-3" id="setting">
         <div class="card-header">Настройка</div>
         <div class="card-body">
-            <p>Модификатор <code>shippingdata_plus.ocmod.xml</code> добавляет колонку, блок на карточке заказа, кабинет покупателя и меню в шапке. Каждую поверхность можно отключить отдельно.</p>
+            <p>Модификатор <code>shippingdata_plus</code> добавляет колонку в списке заказов, блок на карточке заказа, кабинет покупателя и меню в верхней навигационной панели администратора. Каждый раздел можно отключить отдельно.</p>
         </div>
     </div>
 
@@ -713,7 +719,7 @@
             <ol>
                 <li>Резервная копия файлов и БД.</li>
                 <li>Замена файлов, обновление OCMOD.</li>
-                <li>Проверка переключателей и сохранение.</li>
+                <li>Проверьте переключатели на вкладке «Общие» и сохраните настройки.</li>
             </ol>
         </div>
     </div>
@@ -740,7 +746,7 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true">Почему не видно номера отправления?</button>
                     </h2>
                     <div id="faq-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
-                        <div class="accordion-body">Проверьте статус модуля, переключатели поверхностей, поле накладной у перевозчика, совместимый способ доставки и кеш модификаций.</div>
+                        <div class="accordion-body">Проверьте статус модуля, переключатели разделов, поле накладной у перевозчика, совместимый способ доставки и кеш модификаций.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -766,9 +772,9 @@
     <div class="card bg-light mb-3" id="changelog">
         <div class="card-header">Список изменений</div>
         <div class="card-body">
-            <kbd>v. 1.0.0 от 03.11.2026:</kbd>
+            <kbd>v. 1.0 от 03.11.2026:</kbd>
             <ul>
-                <li>первый выпуск: ТТН и трекинг, меню в шапке, резервные копии справочников</li>
+                <li>первый публичный релиз</li>
             </ul>
         </div>
     </div>
