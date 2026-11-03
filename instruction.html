@@ -196,13 +196,22 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Перед встановленням на робочому магазині протестуйте на копії сайту!
             </div>
+            <p class="mb-3">Оберіть папку дистрибутива під вашу версію OpenCart. У кожній (крім 1.5.x) є архів <code>shippingdata_plus.ocmod.zip</code> — один файл для інсталятора доповнень (<code>install.xml</code> і <code>upload/</code> всередині).</p>
+
+            <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x</h6>
             <ol>
-                <li>Завантажте вміст папки <span class="badge bg-info">upload</span> у корінь сайту (FTP або менеджер файлів).</li>
-                <li>У адмін-панелі: <span class="badge bg-info">Додатки → Встановлення доповнень</span> — завантажте <code>shippingdata_plus.ocmod.xml</code> (або скопіюйте в <code>system/</code> для ручного шляху).</li>
-                <li><span class="badge bg-info">Додатки → Модифікації</span> — натисніть <span class="text-success">«Оновити»</span> (для 1.5.x — VQMod/xml за інструкцією дистрибутива).</li>
+                <li><span class="badge bg-info">Додатки → Встановлення доповнень</span> — завантажте <code>shippingdata_plus.ocmod.zip</code> з папки вашої версії (<strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> або <strong>OpenCart 2.0.0.0-2.2.0.0</strong>).</li>
+                <li><span class="badge bg-info">Додатки → Модифікації</span> — натисніть <span class="text-success">«Оновити»</span>.</li>
                 <li><span class="badge bg-info">Додатки → Модулі</span> — знайдіть <strong>Shipping Data Plus</strong>, натисніть <span class="text-success">«Встановити»</span>, потім <span class="text-primary">«Редагувати»</span>.</li>
-                <li>Увімкніть модуль і потрібні поверхні (список, картка, кабінет, меню в шапці), збережіть.</li>
-                <li>Переконайтеся, що у замовлень з`являються номери після створення накладних у модулі перевізника.</li>
+                <li>Увімкніть модуль і потрібні поверхні; натисніть <span class="text-success">«Зберегти»</span>.</li>
+            </ol>
+
+            <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
+            <p>Інсталятор доповнень відсутній — встановлення вручну:</p>
+            <ol>
+                <li>Скопіюйте вміст папки <span class="badge bg-info">upload</span> з пакета <strong>OpenCart 1.5.X.X</strong> у корінь сайту (FTP або менеджер файлів хостингу).</li>
+                <li>Скопіюйте <code>shippingdata_plus.xml</code> у <code>vqmod/xml/</code> на сервері.</li>
+                <li>У адмін-панелі: <span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і <span class="text-success">збережіть</span>.</li>
             </ol>
         </div>
     </div>
@@ -485,11 +494,25 @@
     <div class="card bg-light mb-3" id="installation">
         <div class="card-header">Installation</div>
         <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                <i class="fas fa-exclamation-triangle"></i> Before installing on a live store, test on a copy of the site!
+            </div>
+            <p class="mb-3">Pick the package folder that matches your OpenCart version. Each folder contains <code>shippingdata_plus.ocmod.zip</code> (installer archive with <code>install.xml</code> and <code>upload/</code>) — except OpenCart 1.5.x, which uses manual file copy.</p>
+
+            <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0 through 2.2.x</h6>
             <ol>
-                <li>Upload the <span class="badge bg-info">upload</span> folder to the shop root.</li>
-                <li>Install OCMOD <code>shippingdata_plus.ocmod.xml</code> and refresh modifications.</li>
-                <li>Extensions → Modules → install <strong>Shipping Data Plus</strong>, then Edit.</li>
-                <li>Enable the module and surfaces you need; Save.</li>
+                <li><span class="badge bg-info">Extensions → Installer</span> — upload <code>shippingdata_plus.ocmod.zip</code> from your version folder (<strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong>, or <strong>OpenCart 2.0.0.0-2.2.0.0</strong>).</li>
+                <li><span class="badge bg-info">Extensions → Modifications</span> — click <span class="text-success">Refresh</span>.</li>
+                <li><span class="badge bg-info">Extensions → Modules</span> — find <strong>Shipping Data Plus</strong>, click <span class="text-success">Install</span>, then <span class="text-primary">Edit</span>.</li>
+                <li>Enable the module and the surfaces you need; <span class="text-success">Save</span>.</li>
+            </ol>
+
+            <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
+            <p>There is no extension installer. Install manually:</p>
+            <ol>
+                <li>Copy the contents of the <span class="badge bg-info">upload</span> folder from the <strong>OpenCart 1.5.X.X</strong> package to the shop root (FTP or hosting file manager).</li>
+                <li>Copy <code>shippingdata_plus.xml</code> into <code>vqmod/xml/</code> on the server.</li>
+                <li>In admin: <span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and <span class="text-success">Save</span>.</li>
             </ol>
         </div>
     </div>
@@ -735,10 +758,25 @@
     <div class="card bg-light mb-3" id="installation">
         <div class="card-header">Установка</div>
         <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                <i class="fas fa-exclamation-triangle"></i> Перед установкой на рабочем магазине протестируйте на копии сайта!
+            </div>
+            <p class="mb-3">Выберите папку дистрибутива под вашу версию OpenCart. В каждой (кроме 1.5.x) есть архив <code>shippingdata_plus.ocmod.zip</code> — один файл для установщика дополнений (<code>install.xml</code> и <code>upload/</code> внутри).</p>
+
+            <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x</h6>
             <ol>
-                <li>Загрузите папку <span class="badge bg-info">upload</span> в корень сайта.</li>
-                <li>Установите OCMOD и обновите модификации.</li>
-                <li>Дополнения → Модули → установите <strong>Shipping Data Plus</strong>, включите и сохраните.</li>
+                <li><span class="badge bg-info">Дополнения → Установка</span> — загрузите <code>shippingdata_plus.ocmod.zip</code> из папки вашей версии (<strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> или <strong>OpenCart 2.0.0.0-2.2.0.0</strong>).</li>
+                <li><span class="badge bg-info">Дополнения → Модификации</span> — нажмите <span class="text-success">«Обновить»</span>.</li>
+                <li><span class="badge bg-info">Дополнения → Модули</span> — найдите <strong>Shipping Data Plus</strong>, нажмите <span class="text-success">«Установить»</span>, затем <span class="text-primary">«Редактировать»</span>.</li>
+                <li>Включите модуль и нужные поверхности; <span class="text-success">сохраните</span>.</li>
+            </ol>
+
+            <h6 class="mt-4"><span class="badge bg-danger">OpenCart 1.5.x</span></h6>
+            <p>Установщика дополнений нет — установка вручную:</p>
+            <ol>
+                <li>Скопируйте содержимое папки <span class="badge bg-info">upload</span> из пакета <strong>OpenCart 1.5.X.X</strong> в корень сайта (FTP или файловый менеджер хостинга).</li>
+                <li>Скопируйте <code>shippingdata_plus.xml</code> в <code>vqmod/xml/</code> на сервере.</li>
+                <li>В админ-панели: <span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и <span class="text-success">сохраните</span>.</li>
             </ol>
         </div>
     </div>
