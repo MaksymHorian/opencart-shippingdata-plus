@@ -1,17 +1,20 @@
-# Shipping Data Plus — dev branch
+# Shipping Data Plus — release branch
 
-OpenCart 3 admin module source (oc3 sandbox layout).
+Customer-ready package mirror (same layout as OCMax `v. 1.0.0`, without ionCube PHP bands).
 
 ## Layout
 
 | Path | Content |
 |------|---------|
-| `admin/` | Module controller, model, view, language |
-| `catalog/language/` | Account-facing strings |
-| `system/` | `shippingdata_plus.ocmod.xml` |
-| `docs/` | Module and shared project docs |
-| `package/` | Release manifest and tooling |
+| `OpenCart 3.X.X.X/` | OCMOD installer `.ocmod.zip`, `upload/`, `modification/` |
+| `OpenCart 2.3.X.X/` | Full extension installer `.ocmod.zip` + `upload/` + `modification/` |
+| `OpenCart 2.0.0.0-2.2.0.0/` | Full extension installer `.ocmod.zip` + `upload/` + `modification/` |
+| `OpenCart 1.5.X.X/` | Manual `upload/` + VQMod xml in `modification/` (no installer zip) |
+| `images/` | Instruction screenshots |
+| `instruction.html` | Customer instruction |
 
-## Release
+OpenCart 1.5: copy `upload/` files manually and install the VQMod xml from `modification/`.
 
-Customer packages are built on the **`release`** branch via OCMax build/publish scripts.
+## Development source
+
+See the **`dev`** branch.

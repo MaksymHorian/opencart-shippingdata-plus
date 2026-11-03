@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "Shipping Data Plus" - module for OpenCart. MIT. Attribution required: Prorab337 / OC Max (https://oc-max.com). -->
+<modification>
+	<name>Shipping Data Plus</name>
+	<code>shippingdata_plus</code>
+	<version>1.0.0</version>
+	<author>Prorab337</author>
+	<link>https://oc-max.com</link>
+
+	<file path="admin/controller/sale/order.php">
+		<operation>
+			<search><![CDATA[$this->response->setOutput($this->load->view('sale/order_list.tpl', $data));]]></search>
+			<add position="before"><![CDATA[
+		if ($this->config->get('shippingdata_plus_status') && $this->config->get('shippingdata_plus_order_list')) {
+			$this->load->model('module/shippingdata_plus');
+
+			$data['shippingdata_plus_list'] = true;
+			$data['shippingdata_plus_column'] = $this->model_module_shippingdata_plus->phrase('text_shipment');
+			$data['shippingdata_plus_copy'] = $this->model_module_shippingdata_plus->phrase('button_copy');
+			$data['shippingdata_plus_track'] = $this->model_module_shippingdata_plus->phrase('text_track');
+		}
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[$this->response->setOutput($this->load->view('sale/order_info.tpl', $data));]]></search>
+			<add position="before"><![CDATA[
+			if ($this->config->get('shippingdata_plus_status') && $this->config->get('shippingdata_plus_order_info')) {
+				$this->load->model('module/shippingdata_plus');
+
+				$shippingdata_plus_map = $this->model_module_shippingdata_plus->getOrdersTtn(array($order_id));
+				$shippingdata_plus_id = (string)(int)$order_id;
+
+				if (isset($shippingdata_plus_map[$shippingdata_plus_id])) {
+					$data['shippingdata_plus'] = $shippingdata_plus_map[$shippingdata_plus_id];
+					$data['shippingdata_plus_copy'] = $this->model_module_shippingdata_plus->phrase('button_copy');
+					$data['shippingdata_plus_track'] = $this->model_module_shippingdata_plus->phrase('text_track');
+				}
+			}
+]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/sale/order_list.tpl">
+		<operation>
+			<search><![CDATA[<td class="text-right"><?php echo $column_action; ?></td>]]></search>
+			<add position="before"><![CDATA[
+                  <?php if (!empty($shippingdata_plus_list)) { ?>
+                  <td class="text-left"><?php echo $shippingdata_plus_column; ?></td>
+                  <?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<td class="text-left"><?php echo $order['date_modified']; ?></td>]]></search>
+			<add position="after"><![CDATA[
+                  <?php if (!empty($shippingdata_plus_list)) { ?>
+                  <td class="text-left sdp-cn" style="white-space: nowrap;" data-order-id="<?php echo $order['order_id']; ?>"></td>
+                  <?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<?php echo $footer; ?>]]></search>
+			<add position="before"><![CDATA[
+<?php if (!empty($shippingdata_plus_list)) { ?>
+<script type="text/javascript"><!--
+(function() {
+  var copyTitle = <?php echo json_encode($shippingdata_plus_copy); ?>;
+  var trackTitle = <?php echo json_encode($shippingdata_plus_track); ?>;
+
+  function shippingdataPlusCopy(text, button) {
+    var done = function() {
+      var icon = $(button).find('i');
+      icon.removeClass('fa-clipboard').addClass('fa-check text-success');
+      var timer = $(button).data('sdpTimer');
+      if (timer) {
+        clearTimeout(timer);
+      }
+      $(button).data('sdpTimer', setTimeout(function() {
+        icon.removeClass('fa-check text-success').addClass('fa-clipboard');
+      }, 2000));
+    };
+    var fallback = function() {
+      var area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', 'readonly');
+      area.style.position = 'absolute';
+      area.style.left = '-9999px';
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand('copy');
+      } catch (err) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      if (ok) {
+        done();
+      }
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done).catch(fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function shippingdataPlusLink(url) {
+    return /^https:\/\/(novaposhta\.ua|track\.ukrposhta\.ua|rozetka\.delivery|ua\.meest\.com)\//.test(url);
+  }
+
+  function shippingdataPlusHex(value) {
+    return /^#[0-9A-Fa-f]{6}$/.test(String(value || '')) ? String(value) : '';
+  }
+
+  function shippingdataPlusTrack(row) {
+    if (!row || !shippingdataPlusLink(row.tracking)) {
+      return null;
+    }
+    var bg = shippingdataPlusHex(row.bg);
+    var ink = shippingdataPlusHex(row.ink);
+    var link = $('<a class="btn btn-xs" target="_blank" rel="noopener noreferrer" style="margin-left:4px;">');
+    link.attr('href', row.tracking);
+    link.attr('data-toggle', 'tooltip');
+    link.attr('title', trackTitle);
+    if (bg && ink) {
+      link.css({ backgroundColor: bg, borderColor: bg, color: ink });
+    }
+    link.html('<i class="fa fa-external-link"></i>');
+    return link;
+  }
+
+  function shippingdataPlusFill(cell, row) {
+    if (!cell || !cell.length || !row || !row.number) {
+      return;
+    }
+    var shown = row.display ? String(row.display) : String(row.number);
+    cell.append($('<span style="white-space:nowrap;">').text(shown));
+    var copy = $('<button type="button" class="btn btn-default btn-xs" style="margin-left:4px;">').attr('data-toggle', 'tooltip').attr('title', copyTitle).html('<i class="fa fa-clipboard"></i>');
+    copy.on('click', function(e) {
+      e.preventDefault();
+      shippingdataPlusCopy(String(row.number), this);
+    });
+    cell.append(copy);
+    if ($.fn.tooltip) {
+      copy.tooltip({container: 'body'});
+    }
+    var track = shippingdataPlusTrack(row);
+    if (track) {
+      cell.append(track);
+      if ($.fn.tooltip) {
+        track.tooltip({container: 'body'});
+      }
+    }
+  }
+
+  $('#form-order td[colspan]').each(function() {
+    var span = parseInt($(this).attr('colspan'), 10);
+    if (!isNaN(span)) {
+      $(this).attr('colspan', span + 1);
+    }
+  });
+
+  var ids = [];
+  $('.sdp-cn').each(function() {
+    ids.push($(this).attr('data-order-id'));
+  });
+  if (!ids.length) {
+    return;
+  }
+  $.ajax({
+    url: 'index.php?route=module/shippingdata_plus/orders&token=' + encodeURIComponent(<?php echo json_encode($token); ?>),
+    type: 'POST',
+    data: { order_id: ids },
+    dataType: 'json',
+    success: function(json) {
+      if (!json || !json.orders) {
+        return;
+      }
+      $.each(json.orders, function(id, row) {
+        if (!/^[0-9]+$/.test(String(id))) {
+          return;
+        }
+        shippingdataPlusFill($('.sdp-cn').filter(function() {
+          return String($(this).attr('data-order-id')) === String(id);
+        }), row);
+      });
+    }
+  });
+})();
+//--></script>
+<?php } ?>
+]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/sale/order_info.tpl">
+		<operation>
+			<search><![CDATA[title="<?php echo $text_shipping_method; ?>"]]></search>
+			<add position="replace"><![CDATA[title="<?php echo $text_shipping_method; ?>" id="sdp-shipping-method"]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<?php echo $footer; ?>]]></search>
+			<add position="before"><![CDATA[
+<?php if (!empty($shippingdata_plus)) { ?>
+<div id="sdp-order-info" class="hidden"> <span style="display:inline-flex;align-items:center;line-height:1;white-space:nowrap;"><?php echo htmlspecialchars($shippingdata_plus['display'], ENT_QUOTES, 'UTF-8'); ?> <button type="button" class="btn btn-default btn-xs sdp-copy" data-number="<?php echo htmlspecialchars($shippingdata_plus['number'], ENT_QUOTES, 'UTF-8'); ?>" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_copy, ENT_QUOTES, 'UTF-8'); ?>" style="margin-left:4px;"><i class="fa fa-clipboard"></i></button> <?php if (!empty($shippingdata_plus['tracking'])) { ?><a class="btn btn-xs" href="<?php echo htmlspecialchars($shippingdata_plus['tracking'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_track, ENT_QUOTES, 'UTF-8'); ?>" style="margin-left:4px;background-color:<?php echo htmlspecialchars($shippingdata_plus['bg'], ENT_QUOTES, 'UTF-8'); ?>;border-color:<?php echo htmlspecialchars($shippingdata_plus['bg'], ENT_QUOTES, 'UTF-8'); ?>;color:<?php echo htmlspecialchars($shippingdata_plus['ink'], ENT_QUOTES, 'UTF-8'); ?>;"><i class="fa fa-external-link"></i></a><?php } ?></span></div>
+<script type="text/javascript"><!--
+(function() {
+  var box = document.getElementById('sdp-order-info');
+  var button = document.getElementById('sdp-shipping-method');
+  var cell = button && button.parentNode ? button.parentNode.nextElementSibling : null;
+  if (box && cell) {
+    while (box.firstChild) {
+      cell.appendChild(box.firstChild);
+    }
+    cell.style.display = 'flex';
+    cell.style.alignItems = 'center';
+    cell.style.justifyContent = 'space-between';
+    cell.style.gap = '8px';
+    if (box.parentNode) {
+      box.parentNode.removeChild(box);
+    }
+    if (window.jQuery && jQuery.fn.tooltip) {
+      jQuery(cell).find('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    }
+  }
+  function done(target) {
+    var icon = target.querySelector('i');
+    if (!icon) {
+      return;
+    }
+    icon.className = 'fa fa-check text-success';
+    if (target.sdpTimer) {
+      clearTimeout(target.sdpTimer);
+    }
+    target.sdpTimer = setTimeout(function() {
+      icon.className = 'fa fa-clipboard';
+    }, 2000);
+  }
+  var copies = cell ? cell.querySelectorAll('.sdp-copy') : [];
+  for (var i = 0; i < copies.length; i++) {
+    copies[i].addEventListener('click', function() {
+      var text = this.getAttribute('data-number');
+      var target = this;
+      var fallback = function() {
+        var area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', 'readonly');
+        area.style.position = 'absolute';
+        area.style.left = '-9999px';
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try {
+          ok = document.execCommand('copy');
+        } catch (err) {
+          ok = false;
+        }
+        document.body.removeChild(area);
+        if (ok) {
+          done(target);
+        }
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() { done(target); }).catch(fallback);
+      } else {
+        fallback();
+      }
+    });
+  }
+})();
+//--></script>
+<?php } ?>
+]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/controller/account/order.php">
+		<operation>
+			<search><![CDATA[if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/account/order_list.tpl')) {]]></search>
+			<add position="before"><![CDATA[
+		if ($this->config->get('shippingdata_plus_status') && $this->config->get('shippingdata_plus_account')) {
+			require_once(dirname(DIR_APPLICATION) . '/admin/model/module/shippingdata_plus.php');
+
+			$shippingdata_plus_model = new ModelModuleShippingdataPlus($this->registry);
+			$shippingdata_plus_ids = array();
+
+			foreach ($data['orders'] as $shippingdata_plus_order) {
+				$shippingdata_plus_ids[] = $shippingdata_plus_order['order_id'];
+			}
+
+			$shippingdata_plus_map = $shippingdata_plus_model->getOrdersTtn($shippingdata_plus_ids);
+
+			foreach ($data['orders'] as $shippingdata_plus_key => $shippingdata_plus_order) {
+				$shippingdata_plus_id = (string)(int)$shippingdata_plus_order['order_id'];
+
+				if (isset($shippingdata_plus_map[$shippingdata_plus_id])) {
+					$data['orders'][$shippingdata_plus_key]['shippingdata_plus'] = $shippingdata_plus_map[$shippingdata_plus_id];
+				}
+			}
+
+			$data['shippingdata_plus_account'] = true;
+			$data['shippingdata_plus_text_shipment'] = $shippingdata_plus_model->phrase('text_shipment');
+			$data['shippingdata_plus_text_track'] = $shippingdata_plus_model->phrase('text_track');
+		}
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/account/order_info.tpl')) {]]></search>
+			<add position="before"><![CDATA[
+			if ($this->config->get('shippingdata_plus_status') && $this->config->get('shippingdata_plus_account')) {
+				require_once(dirname(DIR_APPLICATION) . '/admin/model/module/shippingdata_plus.php');
+
+				$shippingdata_plus_model = new ModelModuleShippingdataPlus($this->registry);
+				$shippingdata_plus_map = $shippingdata_plus_model->getOrdersTtn(array($data['order_id']));
+				$shippingdata_plus_id = (string)(int)$data['order_id'];
+
+				if (isset($shippingdata_plus_map[$shippingdata_plus_id])) {
+					$data['shippingdata_plus'] = $shippingdata_plus_map[$shippingdata_plus_id];
+					$data['shippingdata_plus_text_track'] = $shippingdata_plus_model->phrase('text_track');
+				}
+			}
+]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/view/theme/default/template/account/order_list.tpl">
+		<operation>
+			<search><![CDATA[<?php echo $header; ?>]]></search>
+			<add position="after"><![CDATA[
+<?php if (!empty($shippingdata_plus_account)) { ?>
+<style type="text/css">
+a.sdp-btn-xs{padding:1px 5px;font-size:9px;line-height:1.5}
+</style>
+<script type="text/javascript"><!--
+$(function() {
+  if ($.fn.tooltip) {
+    $('.sdp-track').tooltip({container: 'body'});
+  }
+});
+//--></script>
+<?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<td class="text-left"><?php echo $column_date_added; ?></td>]]></search>
+			<add position="after"><![CDATA[
+              <?php if (!empty($shippingdata_plus_account)) { ?>
+              <td class="text-left"><?php echo $shippingdata_plus_text_shipment; ?></td>
+              <?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<td class="text-left"><?php echo $order['date_added']; ?></td>]]></search>
+			<add position="after"><![CDATA[
+              <?php if (!empty($shippingdata_plus_account)) { ?>
+              <td class="text-left"><?php if (!empty($order['shippingdata_plus'])) { ?><span style="white-space:nowrap;"><?php echo htmlspecialchars($order['shippingdata_plus']['carrier_name'], ENT_QUOTES, 'UTF-8'); ?> <?php echo htmlspecialchars($order['shippingdata_plus']['display'], ENT_QUOTES, 'UTF-8'); ?><?php if (!empty($order['shippingdata_plus']['tracking'])) { ?> <a class="btn btn-xs sdp-btn-xs sdp-track" href="<?php echo htmlspecialchars($order['shippingdata_plus']['tracking'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_text_track, ENT_QUOTES, 'UTF-8'); ?>" style="margin-left:4px;background-color:<?php echo htmlspecialchars($order['shippingdata_plus']['bg'], ENT_QUOTES, 'UTF-8'); ?>;border-color:<?php echo htmlspecialchars($order['shippingdata_plus']['bg'], ENT_QUOTES, 'UTF-8'); ?>;color:<?php echo htmlspecialchars($order['shippingdata_plus']['ink'], ENT_QUOTES, 'UTF-8'); ?>;"><i class="fa fa-external-link"></i></a><?php } ?></span><?php } ?></td>
+              <?php } ?>
+]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/view/theme/default/template/account/order_info.tpl">
+		<operation>
+			<search><![CDATA[<?php echo $header; ?>]]></search>
+			<add position="after"><![CDATA[
+<?php if (!empty($shippingdata_plus)) { ?>
+<style type="text/css">
+a.sdp-btn-xs{padding:1px 5px;font-size:9px;line-height:1.5}
+</style>
+<script type="text/javascript"><!--
+$(function() {
+  if ($.fn.tooltip) {
+    $('.sdp-track').tooltip({container: 'body'});
+  }
+});
+//--></script>
+<?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[<b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>]]></search>
+			<add position="after"><![CDATA[
+              <?php if (!empty($shippingdata_plus)) { ?><br/><span style="white-space:nowrap;"><b><?php echo htmlspecialchars($shippingdata_plus['carrier_name'], ENT_QUOTES, 'UTF-8'); ?></b> <?php echo htmlspecialchars($shippingdata_plus['display'], ENT_QUOTES, 'UTF-8'); ?><?php if (!empty($shippingdata_plus['tracking'])) { ?> <a class="btn btn-xs sdp-btn-xs sdp-track" href="<?php echo htmlspecialchars($shippingdata_plus['tracking'], ENT_QUOTES, 'UTF-8'); ?>" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_text_track, ENT_QUOTES, 'UTF-8'); ?>" style="margin-left:4px;background-color:<?php echo htmlspecialchars($shippingdata_plus['bg'], ENT_QUOTES, 'UTF-8'); ?>;border-color:<?php echo htmlspecialchars($shippingdata_plus['bg'], ENT_QUOTES, 'UTF-8'); ?>;color:<?php echo htmlspecialchars($shippingdata_plus['ink'], ENT_QUOTES, 'UTF-8'); ?>;"><i class="fa fa-external-link"></i></a><?php } ?></span><?php } ?>
+]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/controller/common/header.php">
+		<operation>
+			<search><![CDATA[$data['logout'] = $this->url->link('common/logout', 'token=' . $this->session->data['token'], 'SSL');]]></search>
+			<add position="before"><![CDATA[
+			if ($this->config->get('shippingdata_plus_status') && $this->config->get('shippingdata_plus_navbar')) {
+				$this->load->model('module/shippingdata_plus');
+
+				$data['shippingdata_plus_show'] = true;
+				$data['shippingdata_plus_text_check'] = $this->model_module_shippingdata_plus->phrase('text_check');
+				$data['shippingdata_plus_text_cities'] = $this->model_module_shippingdata_plus->phrase('text_cities');
+				$data['shippingdata_plus_text_departments'] = $this->model_module_shippingdata_plus->phrase('text_departments');
+				$data['shippingdata_plus_text_settings'] = $this->model_module_shippingdata_plus->phrase('text_settings');
+				$data['shippingdata_plus_text_menu'] = $this->model_module_shippingdata_plus->phrase('text_menu');
+				$data['shippingdata_plus_button_check'] = $this->model_module_shippingdata_plus->phrase('button_check');
+				$data['shippingdata_plus_button_refresh'] = $this->model_module_shippingdata_plus->phrase('button_refresh');
+				$data['shippingdata_plus_text_ping'] = $this->model_module_shippingdata_plus->phrase('text_ping');
+				$data['shippingdata_plus_text_go_settings'] = $this->model_module_shippingdata_plus->phrase('text_go_settings');
+				$data['shippingdata_plus_success_ping'] = $this->model_module_shippingdata_plus->phrase('success_ping');
+				$data['shippingdata_plus_success_update'] = $this->model_module_shippingdata_plus->phrase('success_update');
+				$data['shippingdata_plus_settings'] = $this->url->link('module/shippingdata_plus', 'token=' . $this->session->data['token'], 'SSL');
+				$data['shippingdata_plus_token'] = $this->session->data['token'];
+				$data['shippingdata_plus_carriers'] = array();
+
+				foreach ($this->model_module_shippingdata_plus->carrierCodes() as $shippingdata_plus_code) {
+					if (!$this->config->get($shippingdata_plus_code . '_status')) {
+						continue;
+					}
+
+					$data['shippingdata_plus_carriers'][] = array(
+						'code'        => $shippingdata_plus_code,
+						'name'        => $this->model_module_shippingdata_plus->carrierName($shippingdata_plus_code),
+						'href'        => $this->url->link('shipping/' . $shippingdata_plus_code, 'token=' . $this->session->data['token'], 'SSL'),
+						'cities'      => $this->model_module_shippingdata_plus->countType($shippingdata_plus_code, 'cities'),
+						'departments' => $this->model_module_shippingdata_plus->countType($shippingdata_plus_code, 'departments')
+					);
+				}
+			}
+]]></add>
+		</operation>
+	</file>
+
+	<file path="admin/view/template/common/header.tpl">
+		<operation>
+			<search><![CDATA[<ul class="nav pull-right">]]></search>
+			<add position="after"><![CDATA[
+    <?php if (!empty($shippingdata_plus_show)) { ?>
+    <li class="dropdown">
+      <a href="#" id="sdp-truck-toggle" class="dropdown-toggle" data-toggle="dropdown" title="<?php echo htmlspecialchars($shippingdata_plus_text_menu, ENT_QUOTES, 'UTF-8'); ?>" aria-label="<?php echo htmlspecialchars($shippingdata_plus_text_menu, ENT_QUOTES, 'UTF-8'); ?>"><i class="fa fa-truck fa-lg"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right sdp-menu">
+        <?php $sdp_i = 0; foreach ($shippingdata_plus_carriers as $carrier) { ?>
+        <?php if ($sdp_i) { ?>
+        <li role="separator" class="divider"></li>
+        <?php } ?>
+        <li class="dropdown-header" id="sdp-head-<?php echo $carrier['code']; ?>" data-name="<?php echo htmlspecialchars($carrier['name'], ENT_QUOTES, 'UTF-8'); ?>"><?php echo $carrier['name']; ?> <a href="<?php echo $carrier['href']; ?>" class="btn btn-default btn-xs" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_text_go_settings, ENT_QUOTES, 'UTF-8'); ?>" onclick="event.stopPropagation();"><i class="fa fa-cog"></i></a></li>
+        <li>
+          <div class="row sdp-row">
+            <div class="col-xs-5"><i class="fa fa-plug"></i> <?php echo $shippingdata_plus_text_check; ?></div>
+            <div class="col-xs-5"><span id="sdp-ping-<?php echo $carrier['code']; ?>"></span></div>
+            <div class="col-xs-2">
+              <button type="button" id="sdp-ping-btn-<?php echo $carrier['code']; ?>" class="btn btn-default btn-xs" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_button_check, ENT_QUOTES, 'UTF-8'); ?>" onclick="sdpPing('<?php echo $carrier['code']; ?>'); event.stopPropagation();"><i class="fa fa-plug"></i></button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row sdp-row">
+            <div class="col-xs-5"><i class="fa fa-building-o"></i> <?php echo $shippingdata_plus_text_cities; ?></div>
+            <div class="col-xs-5"><span id="sdp-count-<?php echo $carrier['code']; ?>-cities"><?php echo (int)$carrier['cities']; ?></span> <span id="sdp-delta-<?php echo $carrier['code']; ?>-cities"></span></div>
+            <div class="col-xs-2">
+              <button type="button" id="sdp-refresh-<?php echo $carrier['code']; ?>-cities" class="btn btn-success btn-xs" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_button_refresh, ENT_QUOTES, 'UTF-8'); ?>" onclick="sdpUpdate('<?php echo $carrier['code']; ?>', 'cities'); event.stopPropagation();"><i class="fa fa-refresh"></i></button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row sdp-row">
+            <div class="col-xs-5"><i class="fa fa-map-marker"></i> <?php echo $shippingdata_plus_text_departments; ?></div>
+            <div class="col-xs-5"><span id="sdp-count-<?php echo $carrier['code']; ?>-departments"><?php echo (int)$carrier['departments']; ?></span> <span id="sdp-delta-<?php echo $carrier['code']; ?>-departments"></span></div>
+            <div class="col-xs-2">
+              <button type="button" id="sdp-refresh-<?php echo $carrier['code']; ?>-departments" class="btn btn-success btn-xs" data-toggle="tooltip" title="<?php echo htmlspecialchars($shippingdata_plus_button_refresh, ENT_QUOTES, 'UTF-8'); ?>" onclick="sdpUpdate('<?php echo $carrier['code']; ?>', 'departments'); event.stopPropagation();"><i class="fa fa-refresh"></i></button>
+            </div>
+          </div>
+        </li>
+        <?php $sdp_i++; } ?>
+        <?php if (!empty($shippingdata_plus_carriers)) { ?>
+        <li role="separator" class="divider"></li>
+        <?php } ?>
+        <li><a href="<?php echo $shippingdata_plus_settings; ?>"><i class="fa fa-cog"></i> <?php echo $shippingdata_plus_text_settings; ?></a></li>
+      </ul>
+    </li>
+    <?php } ?>
+]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[</header>]]></search>
+			<add position="before"><![CDATA[
+<?php if (!empty($shippingdata_plus_show)) { ?>
+<style>
+.sdp-menu { min-width: 320px; }
+.sdp-menu > li > .sdp-row { margin-left: 0; margin-right: 0; padding: 3px 15px; }
+.sdp-menu > li > .sdp-row > [class*="col-"] { padding: 2px 4px; }
+.sdp-menu > li > .sdp-row > .col-xs-2 { text-align: right; white-space: nowrap; }
+.sdp-menu > li > .sdp-row > .col-xs-5 + .col-xs-5 { white-space: normal; word-wrap: break-word; }
+.sdp-menu > li.dropdown-header > a.btn { display: inline-block; float: none; clear: none; margin-left: 6px; padding: 1px 5px; line-height: 1.5; vertical-align: middle; }
+</style>
+<script type="text/javascript"><!--
+var sdpTextPing = <?php echo json_encode($shippingdata_plus_text_ping); ?>;
+var sdpSuccessPing = <?php echo json_encode($shippingdata_plus_success_ping); ?>;
+var sdpSuccessUpdate = <?php echo json_encode($shippingdata_plus_success_update); ?>;
+var sdpToken = <?php echo json_encode($shippingdata_plus_token); ?>;
+
+function sdpFormat(text, a, b) {
+  var out = String(text).replace('%s', a);
+  if (arguments.length > 2) {
+    out = out.replace('%s', b);
+  }
+  return out;
+}
+
+function sdpCarrierName(code) {
+  var name = $('#sdp-head-' + code).attr('data-name');
+  return name ? name : code;
+}
+
+function sdpAlert(kind, message) {
+  var $box = $('<div class="alert alert-dismissible">').addClass(kind === 'success' ? 'alert-success' : 'alert-danger');
+  $box.append($('<i class="fa">').addClass(kind === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'));
+  $box.append(document.createTextNode(' ' + message + ' '));
+  $box.append('<button type="button" class="close" data-dismiss="alert">&times;</button>');
+  var $host = $('#content > .container-fluid');
+  if (!$host.length) {
+    $host = $('#content');
+  }
+  if (!$host.length) {
+    $host = $('body');
+  }
+  $host.first().prepend($box);
+}
+
+function sdpPing(code) {
+  var $label = $('#sdp-ping-' + code);
+  var $btn = $('#sdp-ping-btn-' + code);
+  var $icon = $btn.children('i');
+  if ($btn.prop('disabled')) {
+    return;
+  }
+  $.ajax({
+    url: 'index.php?route=module/shippingdata_plus/ping&token=' + encodeURIComponent(sdpToken) + '&carrier=' + encodeURIComponent(code),
+    dataType: 'json',
+    beforeSend: function() {
+      $btn.prop('disabled', true);
+      $icon.attr('data-sdp-icon', $icon.attr('class')).attr('class', 'fa fa-spinner fa-spin');
+    },
+    complete: function() {
+      $btn.prop('disabled', false);
+      $icon.attr('class', $icon.attr('data-sdp-icon') || 'fa fa-plug');
+    },
+    success: function(json) {
+      $label.removeClass('text-success text-warning text-danger');
+      if (!json) {
+        return;
+      }
+      if (json.color === 'success' || json.color === 'warning' || json.color === 'danger') {
+        $label.addClass('text-' + json.color);
+      }
+      if (json.ok) {
+        $label.text(sdpFormat(sdpTextPing, json.ms));
+        sdpAlert('success', sdpFormat(sdpSuccessPing, sdpCarrierName(code), json.ms));
+      } else {
+        $label.addClass('text-danger').text(json.error || '');
+        sdpAlert('danger', json.error || '');
+      }
+    }
+  });
+}
+function sdpUpdate(code, type) {
+  var $btn = $('#sdp-refresh-' + code + '-' + type);
+  var $icon = $btn.children('i');
+  if ($btn.prop('disabled')) {
+    return;
+  }
+  $.ajax({
+    url: 'index.php?route=module/shippingdata_plus/update&token=' + encodeURIComponent(sdpToken) + '&carrier=' + encodeURIComponent(code) + '&type=' + encodeURIComponent(type),
+    dataType: 'json',
+    timeout: 0,
+    beforeSend: function() {
+      $btn.prop('disabled', true);
+      $icon.attr('data-sdp-icon', $icon.attr('class')).attr('class', 'fa fa-spinner fa-spin');
+    },
+    complete: function() {
+      $btn.prop('disabled', false);
+      $icon.attr('class', $icon.attr('data-sdp-icon') || 'fa fa-refresh');
+    },
+    success: function(json) {
+      var $delta = $('#sdp-delta-' + code + '-' + type);
+      $delta.removeClass('text-danger');
+      if (!json) {
+        return;
+      }
+      if (json.error && typeof json.count === 'undefined') {
+        $delta.addClass('text-danger').text(json.error);
+        sdpAlert('danger', json.error);
+        return;
+      }
+      if (typeof json.count !== 'undefined') {
+        $('#sdp-count-' + code + '-' + type).text(json.count);
+      }
+      if (json.error) {
+        $delta.addClass('text-danger').text(json.error);
+        sdpAlert('danger', json.error);
+        return;
+      }
+      var delta = parseInt(json.delta, 10);
+      if (isNaN(delta)) {
+        delta = 0;
+      }
+      var signed = delta > 0 ? '+' + delta : String(delta);
+      $delta.text(signed);
+      sdpAlert('success', sdpFormat(sdpSuccessUpdate, sdpCarrierName(code), signed));
+    }
+  });
+}
+$(document).ready(function() {
+  if ($.fn.tooltip) {
+    $('#sdp-truck-toggle').tooltip({container: 'body'});
+    $('.sdp-menu [data-toggle="tooltip"]').tooltip({container: 'body'});
+  }
+});
+//--></script>
+<?php } ?>
+]]></add>
+		</operation>
+	</file>
+</modification>
+
