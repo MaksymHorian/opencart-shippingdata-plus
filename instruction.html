@@ -196,7 +196,7 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Перед встановленням на робочому магазині протестуйте на копії сайту!
             </div>
-            <p class="mb-3">Оберіть папку дистрибутива під вашу версію OpenCart. У <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> та <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежать <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> і <code>upload/</code> всередині), папка <code>upload/</code> і тека <code>modification/</code> з файлом <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — лише ручне копіювання (див. нижче).</p>
+            <p class="mb-3">Оберіть папку дистрибутива під вашу версію OpenCart. У <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> та <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежать <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> і <code>upload/</code> всередині) і папка <code>upload/</code>. Модифікатор — у теці <code>modification/</code>: для OpenCart 3 це <code>shippingdata_plus.ocmod.zip</code> (усередині лише <code>install.xml</code>), для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — лише ручне копіювання (див. нижче).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x — основний шлях</h6>
             <ol>
@@ -213,7 +213,7 @@
                 <li><span class="badge bg-info">Додатки → Встановлення доповнень</span> — завантажте модифікатор:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 і 2.3:</strong> завантажте <code>modification/shippingdata_plus.ocmod.xml</code> (інсталятор приймає окремий файл <code>.ocmod.xml</code>).</li>
-                        <li><strong>OpenCart 3.x:</strong> інсталятор приймає лише файл із розширенням <code>.ocmod.zip</code>, а не «голий» XML. Після копіювання через FTP знову завантажте <code>shippingdata_plus.ocmod.zip</code>, щоб <code>install.xml</code> потрапив у базу, потім <span class="badge bg-info">Додатки → Модифікації</span> — <span class="text-success">«Оновити»</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> інсталятор приймає лише <code>.ocmod.zip</code>. Завантажте <code>modification/shippingdata_plus.ocmod.zip</code> — усередині лише <code>install.xml</code>. Потім <span class="badge bg-info">Додатки → Модифікації</span> — <span class="text-success">«Оновити»</span>.</li>
                     </ul>
                 </li>
                 <li><span class="badge bg-info">Додатки → Модулі</span> — встановіть <strong>Shipping Data Plus</strong>, відкрийте <span class="text-primary">«Редагувати»</span>, увімкніть модуль і <span class="text-success">збережіть</span>.</li>
@@ -510,7 +510,7 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Before installing on a live store, test on a copy of the site!
             </div>
-            <p class="mb-3">Pick the package folder that matches your OpenCart version. In <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong>, and <strong>OpenCart 2.0.0.0-2.2.0.0</strong> you will find <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> and <code>upload/</code> inside), the <code>upload/</code> folder, and <code>modification/shippingdata_plus.ocmod.xml</code>. OpenCart 1.5.x uses manual file copy only (see below).</p>
+            <p class="mb-3">Pick the package folder that matches your OpenCart version. In <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong>, and <strong>OpenCart 2.0.0.0-2.2.0.0</strong> you will find <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> and <code>upload/</code> inside) and the <code>upload/</code> folder. The modifier is in <code>modification/</code>: OpenCart 3 uses <code>shippingdata_plus.ocmod.zip</code> (only <code>install.xml</code> inside); 2.x uses <code>shippingdata_plus.ocmod.xml</code>. OpenCart 1.5.x uses manual file copy only (see below).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0 through 2.2.x — primary path</h6>
             <ol>
@@ -527,7 +527,7 @@
                 <li><span class="badge bg-info">Extensions → Installer</span> — load the modifier:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 and 2.3:</strong> upload <code>modification/shippingdata_plus.ocmod.xml</code> (the installer accepts a bare <code>.ocmod.xml</code> file).</li>
-                        <li><strong>OpenCart 3.x:</strong> the installer accepts only a file whose name ends in <code>.ocmod.zip</code>, not a bare XML file. After the FTP copy, upload <code>shippingdata_plus.ocmod.zip</code> again so <code>install.xml</code> is registered, then <span class="badge bg-info">Extensions → Modifications</span> — <span class="text-success">Refresh</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> the installer accepts only <code>.ocmod.zip</code>. Upload <code>modification/shippingdata_plus.ocmod.zip</code> — it contains only <code>install.xml</code>. Then <span class="badge bg-info">Extensions → Modifications</span> — <span class="text-success">Refresh</span>.</li>
                     </ul>
                 </li>
                 <li><span class="badge bg-info">Extensions → Modules</span> — install <strong>Shipping Data Plus</strong>, open <span class="text-primary">Edit</span>, enable the module, and <span class="text-success">Save</span>.</li>
@@ -787,7 +787,7 @@
             <div class="alert alert-danger" role="alert">
                 <i class="fas fa-exclamation-triangle"></i> Перед установкой на рабочем магазине протестируйте на копии сайта!
             </div>
-            <p class="mb-3">Выберите папку дистрибутива под вашу версию OpenCart. В <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> и <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежат <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> и <code>upload/</code> внутри), папка <code>upload/</code> и папка <code>modification/</code> с файлом <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — только ручное копирование (см. ниже).</p>
+            <p class="mb-3">Выберите папку дистрибутива под вашу версию OpenCart. В <strong>OpenCart 3.X.X.X</strong>, <strong>OpenCart 2.3.X.X</strong> и <strong>OpenCart 2.0.0.0-2.2.0.0</strong> лежат <code>shippingdata_plus.ocmod.zip</code> (<code>install.xml</code> и <code>upload/</code> внутри) и папка <code>upload/</code>. Модификатор — в папке <code>modification/</code>: для OpenCart 3 это <code>shippingdata_plus.ocmod.zip</code> (внутри только <code>install.xml</code>), для 2.x — файл <code>shippingdata_plus.ocmod.xml</code>. Для OpenCart 1.5.x — только ручное копирование (см. ниже).</p>
 
             <h6 class="mt-3">OpenCart 3.x, 2.3.x, 2.0–2.2.x — основной путь</h6>
             <ol>
@@ -804,7 +804,7 @@
                 <li><span class="badge bg-info">Дополнения → Установка</span> — загрузите модификатор:
                     <ul class="mt-2 mb-0">
                         <li><strong>OpenCart 2.0–2.2 и 2.3:</strong> загрузите <code>modification/shippingdata_plus.ocmod.xml</code> (установщик принимает отдельный файл <code>.ocmod.xml</code>).</li>
-                        <li><strong>OpenCart 3.x:</strong> установщик принимает только файл с расширением <code>.ocmod.zip</code>, а не «голый» XML. После копирования по FTP снова загрузите <code>shippingdata_plus.ocmod.zip</code>, чтобы <code>install.xml</code> попал в базу, затем <span class="badge bg-info">Дополнения → Модификации</span> — <span class="text-success">«Обновить»</span>.</li>
+                        <li><strong>OpenCart 3.x:</strong> установщик принимает только <code>.ocmod.zip</code>. Загрузите <code>modification/shippingdata_plus.ocmod.zip</code> — внутри только <code>install.xml</code>. Затем <span class="badge bg-info">Дополнения → Модификации</span> — <span class="text-success">«Обновить»</span>.</li>
                     </ul>
                 </li>
                 <li><span class="badge bg-info">Дополнения → Модули</span> — установите <strong>Shipping Data Plus</strong>, откройте <span class="text-primary">«Редактировать»</span>, включите модуль и <span class="text-success">сохраните</span>.</li>
