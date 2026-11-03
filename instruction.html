@@ -34,7 +34,6 @@
                             <li><a class="dropdown-item link-goto" href="#opportunities">Функціональні можливості</a></li>
                             <li><a class="dropdown-item link-goto" href="#languages">Підтримувані мови</a></li>
                             <li><a class="dropdown-item link-goto" href="#compatibility">Сумісність</a></li>
-                            <li><a class="dropdown-item link-goto" href="#license">Ліцензія</a></li>
                             <li><a class="dropdown-item link-goto" href="#requirements">Вимоги</a></li>
                         </ul>
                     </li>
@@ -77,15 +76,16 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus для OpenCart</h1>
         <p class="lead">
-            Безкоштовне доповнення під ліцензією <span class="badge bg-success">MIT</span> покращує роботу з уже встановленими модулями доставки OC Max (Нова пошта, Укрпошта, Meest, Rozetka Delivery). Воно не замінює модулі перевізників і не має власних ключів API чи ліцензії: номери накладних беруться з полів замовлення, а перевірка API та оновлення міст/відділень використовує налаштування відповідного модуля доставки.
+            Це доповнення для магазинів, які вже використовують модулі доставки OC Max і не планують оновлювати їх найближчим часом або не можуть оновити їх з технічних причин. Той самий функціонал з’явиться в майбутніх оновленнях цих модулів доставки. Воно працює разом із такими модулями:
         </p>
+        <ul class="lead">
+            <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
+            <li><a href="https://oc-max.com/ukrposhta-api" target="_blank" rel="noopener noreferrer">Ukrposhta API</a></li>
+            <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
+            <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
+        </ul>
         <p class="lead">
-            У адмін-панелі з`являються колонка <span class="badge bg-light text-dark">Відправлення</span>, номер і кнопка трекінгу на картці замовлення, меню швидких дій у шапці та резервні копії довідників перевізників. У кабінеті покупця — той самий номер і посилання «Відстежити на сайті перевізника» в історії замовлень.
-        </p>
-        <hr class="my-4">
-        <p class="lead text-center">
-            <a class="btn btn-primary btn-lg" href="http://oc3/admin/index.php?route=extension/module/shippingdata_plus" role="button" target="_blank">Налаштування модуля (демо oc3)</a>
-            <a class="btn btn-primary btn-lg" href="http://oc3/" role="button" target="_blank">Магазин (демо)</a>
+            Доповнення не замінює ці модулі. Номери накладних беруться з полів замовлення, які модулі перевізників уже зберігають. Перевірка API та оновлення міст і відділень використовує налаштування відповідного модуля доставки.
         </p>
     </div>
 
@@ -97,47 +97,15 @@
     <div class="card bg-light mb-3" id="opportunities">
         <div class="card-header">Функціональні можливості</div>
         <div class="card-body">
-            <h6>Основні можливості</h6>
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> показ номера відправлення (ТТН) у списку замовлень, на картці замовлення та в кабінеті покупця</li>
+                <li><i class="fas fa-barcode fa-fw"></i> показ номера відправлення (ТТН) у списку замовлень адмінки, на картці замовлення та в кабінеті покупця</li>
                 <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка переходу на офіційний трекінг перевізника в кольорі бренду</li>
                 <li><i class="far fa-copy fa-fw"></i> копіювання сирого номера в адмін-списку та на картці замовлення</li>
                 <li><i class="fas fa-truck fa-fw"></i> меню в шапці адмінки: перевірка API, оновлення міст і відділень для увімкнених перевізників</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> окремі перемикачі для кожної поверхні: статус модуля, меню в шапці, список замовлень, картка замовлення, кабінет покупця</li>
                 <li><i class="fas fa-database fa-fw"></i> одна резервна копія довідників кожного перевізника з можливістю відновлення</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> якщо увімкнено Nova Poshta PRO і його колонка в списку замовлень уже заповнена, модуль доповнює лише порожні комірки; на картці замовлення номер не показується для замовлень, якими керує Nova Poshta PRO</li>
             </ul>
-            <div id="opportunities-admin-accordion">
-                <div class="item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#opportunities-admin-accordion-1" aria-expanded="false" aria-controls="opportunities-admin-accordion-1">детальніше...</a>
-                    <div id="opportunities-admin-accordion-1" class="collapse" role="tabpanel">
-                        <h6>Вкладка «Загальні»</h6>
-                        <ul>
-                            <li><strong>Статус</strong> — увімкнення модуля</li>
-                            <li><strong>Меню в шапці</strong> — іконка вантажівки (OpenCart 2.x/3.x) або пункт меню «Shipping Data Plus» (1.5.x) з перевіркою API та оновленням довідників</li>
-                            <li><strong>Список замовлень</strong> — колонка «Відправлення» (номер, копіювання, трекінг). Якщо увімкнено Nova Poshta PRO і його колонка вже заповнена, модуль доповнює лише порожні комірки</li>
-                            <li><strong>Картка замовлення</strong> — номер і кнопки в рядку способу доставки (крім замовлень, якими керує Nova Poshta PRO)</li>
-                            <li><strong>Кабінет покупця</strong> — колонка в історії замовлень і рядок на сторінці замовлення без копіювання</li>
-                        </ul>
-                        <h6>Вкладка «Резервні копії»</h6>
-                        <ul>
-                            <li>для кожного з чотирьох перевізників — таблиці областей, міст, відділень і довідників</li>
-                            <li><strong>Зберегти копію</strong> — shadow-таблиці <code>__sdp</code></li>
-                            <li><strong>Відновити</strong> — заміна поточних довідників з копії (live-таблиці перевізника не видаляються при деінсталяції модуля)</li>
-                        </ul>
-                        <h6>Можливості для клієнта магазину</h6>
-                        <ul>
-                            <li>назва перевізника (без суфікса « API») і згрупований номер</li>
-                            <li>компактна кнопка трекінгу на списку та сторінці замовлення</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-3">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_1.png" class="img-thumbnail d-block mb-2" alt="Налаштування Shipping Data Plus">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_2.png" class="img-thumbnail d-block mb-2" alt="Список замовлень і меню в шапці">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_3.png" class="img-thumbnail d-block mb-2" alt="Картка замовлення з ТТН">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_4.png" class="img-thumbnail d-block mb-2" alt="Історія замовлень покупця">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_5.png" class="img-thumbnail d-block" alt="Сторінка замовлення в кабінеті">
-            </p>
         </div>
     </div>
     <div class="card bg-light mb-3" id="languages">
@@ -158,19 +126,6 @@
                 <li>OpenCart 3.x (основна розробка); OpenCart 1.5.x / 2.x — через поширення пакета (меню в шапці на 1.5.x — текстовий пункт «Shipping Data Plus»)</li>
                 <li>потрібен хоча б один увімкнений модуль доставки OC Max: Nova Poshta, Ukrposhta, Meest або Rozetka Delivery</li>
                 <li>не змінює PHP модулів Shipping Data або перевізників — лише OCMOD-патчі інтерфейсу</li>
-            </ul>
-            <p>
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_7.png" class="img-thumbnail" alt="Меню Shipping Data Plus на OpenCart 1.5">
-            </p>
-        </div>
-    </div>
-    <div class="card bg-light mb-3" id="license">
-        <div class="card-header">Ліцензія</div>
-        <div class="card-body">
-            <ul class="list-unstyled">
-                <li><i class="fas fa-gift"></i> безкоштовно під ліцензією <strong>MIT</strong> — використовуйте, змінюйте та поширюйте з збереженням copyright-повідомлення Prorab337 / OC Max</li>
-                <li><i class="fas fa-unlock"></i> ключ ліцензії OC Max і власні ключі API для цього модуля <strong>не потрібні</strong></li>
-                <li><i class="far fa-file-alt"></i> повний текст: <a href="https://oc-max.com/docs/shippingdata-plus/license.md" target="_blank" rel="noopener noreferrer">license.md</a></li>
             </ul>
         </div>
     </div>
@@ -314,7 +269,6 @@
                     <div id="faq-collapse-3" class="accordion-collapse collapse" aria-labelledby="faq-heading-3" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
                             Пункт <strong>Shipping Data Plus</strong> у верхньому меню поруч із «Вихід», а не іконка вантажівки. На картці замовлення номер — на вкладці адреси доставки.
-                            <p class="mt-2"><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_8.png" class="img-thumbnail" alt="Картка замовлення OpenCart 1.5"></p>
                         </div>
                     </div>
                 </div>
@@ -328,7 +282,6 @@
             <kbd>v. 1.0.0 від 03.11.2026:</kbd>
             <ul>
                 <li>перший публічний випуск: TTN і трекінг в адмінці та кабінеті, меню швидких дій, резервні копії довідників перевізників</li>
-                <li>ліцензія MIT, без ключа OC Max</li>
             </ul>
         </div>
     </div>
@@ -366,7 +319,6 @@
                             <li><a class="dropdown-item link-goto" href="#opportunities">Features</a></li>
                             <li><a class="dropdown-item link-goto" href="#languages">Languages</a></li>
                             <li><a class="dropdown-item link-goto" href="#compatibility">Compatibility</a></li>
-                            <li><a class="dropdown-item link-goto" href="#license">License</a></li>
                             <li><a class="dropdown-item link-goto" href="#requirements">Requirements</a></li>
                         </ul>
                     </li>
@@ -409,15 +361,16 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus for OpenCart</h1>
         <p class="lead">
-            A free <span class="badge bg-success">MIT</span> extension that enhances already installed OC Max carrier modules (Nova Poshta, Ukrposhta, Meest, Rozetka Delivery). It does not replace carrier modules and has no license key or API keys of its own: consignment numbers come from order fields; API checks and city/department refresh use each carrier module’s credentials.
+            This add-on is for shops that already use OC Max delivery modules and do not plan to update them soon, or cannot update them for technical reasons. The same functionality will be added in future updates of those delivery modules. It works alongside:
         </p>
+        <ul class="lead">
+            <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
+            <li><a href="https://oc-max.com/ukrposhta-api" target="_blank" rel="noopener noreferrer">Ukrposhta API</a></li>
+            <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
+            <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
+        </ul>
         <p class="lead">
-            In admin you get a <span class="badge bg-light text-dark">Shipment</span> column, TTN and tracking on the order page, a header quick menu, and spare directory backups. In the customer account — the same number and a “Track on carrier website” link.
-        </p>
-        <hr class="my-4">
-        <p class="lead text-center">
-            <a class="btn btn-primary btn-lg" href="http://oc3/admin/index.php?route=extension/module/shippingdata_plus" role="button" target="_blank">Module settings (oc3 demo)</a>
-            <a class="btn btn-primary btn-lg" href="http://oc3/" role="button" target="_blank">Storefront (demo)</a>
+            It does not replace those modules. Waybill numbers come from the order fields the carrier modules already store. API check and city/department refresh use each carrier module’s own settings.
         </p>
     </div>
 
@@ -426,42 +379,15 @@
     <div class="card bg-light mb-3" id="opportunities">
         <div class="card-header">Features</div>
         <div class="card-body">
-            <h6>Highlights</h6>
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> consignment number in order list, order info, and customer account</li>
-                <li><i class="fas fa-external-link-alt fa-fw"></i> branded tracking button to the carrier’s public tracker</li>
-                <li><i class="far fa-copy fa-fw"></i> copy raw number in admin list and order info</li>
-                <li><i class="fas fa-truck fa-fw"></i> admin header menu: API ping, cities and departments refresh for enabled carriers</li>
-                <li><i class="fas fa-database fa-fw"></i> one spare backup set per carrier with restore</li>
+                <li><i class="fas fa-barcode fa-fw"></i> consignment number (TTN) in the admin order list, on the order page, and in the customer account</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> brand-colored tracking button to the carrier’s public tracker</li>
+                <li><i class="far fa-copy fa-fw"></i> copy of the raw number in admin list and order info</li>
+                <li><i class="fas fa-truck fa-fw"></i> admin header menu: API check, city and department refresh for enabled carriers</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> per-surface toggles: module status, header menu, order list, order page, customer account</li>
+                <li><i class="fas fa-database fa-fw"></i> one directory backup per carrier with restore</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> when Nova Poshta PRO is enabled and its order-list column is already filled, this module only fills empty cells; TTN is not shown on the order page for orders managed by Nova Poshta PRO</li>
             </ul>
-            <div id="opportunities-admin-accordion">
-                <div class="item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#opportunities-admin-accordion-1" aria-expanded="false" aria-controls="opportunities-admin-accordion-1">more...</a>
-                    <div id="opportunities-admin-accordion-1" class="collapse" role="tabpanel">
-                        <h6>General tab</h6>
-                        <ul>
-                            <li><strong>Status</strong> — enable the module</li>
-                            <li><strong>Header menu</strong> — truck icon (OC 2.x/3.x) or “Shipping Data Plus” text item (1.5.x)</li>
-                            <li><strong>Order list</strong> — Shipment column; fills empty Nova Poshta PRO cells when PRO is active</li>
-                            <li><strong>Order info</strong> — inline TTN unless Nova Poshta PRO owns that order</li>
-                            <li><strong>Customer account</strong> — list column and order info row (no copy button)</li>
-                        </ul>
-                        <h6>Backups tab</h6>
-                        <ul>
-                            <li>per-carrier regions, cities, departments, references</li>
-                            <li><strong>Save backup</strong> — shadow tables <code>__sdp</code></li>
-                            <li><strong>Restore</strong> — swap live directories from spare copy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-3">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_1.png" class="img-thumbnail d-block mb-2" alt="Shipping Data Plus settings">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_2.png" class="img-thumbnail d-block mb-2" alt="Order list and header menu">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_3.png" class="img-thumbnail d-block mb-2" alt="Order info with TTN">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_4.png" class="img-thumbnail d-block mb-2" alt="Customer order history">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_5.png" class="img-thumbnail d-block" alt="Customer order info">
-            </p>
         </div>
     </div>
     <div class="card bg-light mb-3" id="languages">
@@ -477,17 +403,6 @@
                 <li>OpenCart 3.x (primary); 1.5.x / 2.x via package propagation — on 1.5.x the header item is the text menu “Shipping Data Plus”</li>
                 <li>requires at least one enabled OC Max carrier shipping module</li>
                 <li>UI-only OCMOD — does not patch carrier PHP</li>
-            </ul>
-            <p><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_7.png" class="img-thumbnail" alt="OpenCart 1.5 header menu"></p>
-        </div>
-    </div>
-    <div class="card bg-light mb-3" id="license">
-        <div class="card-header">License</div>
-        <div class="card-body">
-            <ul class="list-unstyled">
-                <li><i class="fas fa-gift"></i> free under <strong>MIT</strong> — keep copyright notice for Prorab337 / OC Max</li>
-                <li><i class="fas fa-unlock"></i> no OC Max license key and no module API keys</li>
-                <li><i class="far fa-file-alt"></i> full text: <a href="https://oc-max.com/docs/shippingdata-plus/license.md" target="_blank" rel="noopener noreferrer">license.md</a></li>
             </ul>
         </div>
     </div>
@@ -599,9 +514,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3">Where is the menu on OpenCart 1.5?</button>
                     </h2>
                     <div id="faq-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                        <div class="accordion-body">Top menu item <strong>Shipping Data Plus</strong> next to Logout. TTN on order info appears on the shipping-address tab.
-                            <p class="mt-2"><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_8.png" class="img-thumbnail" alt="OC 1.5 order info"></p>
-                        </div>
+                        <div class="accordion-body">Top menu item <strong>Shipping Data Plus</strong> next to Logout. TTN on order info appears on the shipping-address tab.</div>
                     </div>
                 </div>
             </div>
@@ -614,7 +527,6 @@
             <kbd>v. 1.0.0 from 03.11.2026:</kbd>
             <ul>
                 <li>initial release: TTN and tracking in admin and account, header tools, carrier directory backups</li>
-                <li>MIT license, no OC Max license key</li>
             </ul>
         </div>
     </div>
@@ -652,7 +564,6 @@
                             <li><a class="dropdown-item link-goto" href="#opportunities">Возможности</a></li>
                             <li><a class="dropdown-item link-goto" href="#languages">Языки</a></li>
                             <li><a class="dropdown-item link-goto" href="#compatibility">Совместимость</a></li>
-                            <li><a class="dropdown-item link-goto" href="#license">Лицензия</a></li>
                             <li><a class="dropdown-item link-goto" href="#requirements">Требования</a></li>
                         </ul>
                     </li>
@@ -695,15 +606,16 @@
     <div class="bg-light p-5 rounded-3">
         <h1 class="display-3">Shipping Data Plus для OpenCart</h1>
         <p class="lead">
-            Бесплатное дополнение под лицензией <span class="badge bg-success">MIT</span> для уже установленных модулей доставки OC Max (Новая почта, Укрпошта, Meest, Rozetka Delivery). Не заменяет модули перевозчиков и не требует собственных ключей API или лицензии OC Max: номера накладных берутся из полей заказа, проверка API и обновление городов/отделений используют настройки модуля перевозчика.
+            Это дополнение для магазинов, которые уже используют модули доставки OC Max и не планируют обновлять их в ближайшее время или не могут обновить их по техническим причинам. Тот же функционал появится в будущих обновлениях этих модулей доставки. Оно работает вместе с модулями:
         </p>
+        <ul class="lead">
+            <li><a href="https://oc-max.com/nova-poshta-api" target="_blank" rel="noopener noreferrer">Nova Poshta API</a></li>
+            <li><a href="https://oc-max.com/ukrposhta-api" target="_blank" rel="noopener noreferrer">Ukrposhta API</a></li>
+            <li><a href="https://oc-max.com/meest-poshta" target="_blank" rel="noopener noreferrer">Meest</a></li>
+            <li><a href="https://oc-max.com/rozetka-delivery" target="_blank" rel="noopener noreferrer">Rozetka Delivery</a></li>
+        </ul>
         <p class="lead">
-            В админке — колонка <span class="badge bg-light text-dark">Отправление</span>, номер и трекинг на карточке заказа, меню в шапке и резервные копии справочников. В кабинете покупателя — тот же номер и ссылка отслеживания на сайте перевозчика.
-        </p>
-        <hr class="my-4">
-        <p class="lead text-center">
-            <a class="btn btn-primary btn-lg" href="http://oc3/admin/index.php?route=extension/module/shippingdata_plus" role="button" target="_blank">Настройки модуля (демо oc3)</a>
-            <a class="btn btn-primary btn-lg" href="http://oc3/" role="button" target="_blank">Магазин (демо)</a>
+            Дополнение не заменяет эти модули. Номера накладных берутся из полей заказа, которые модули перевозчиков уже сохраняют. Проверка API и обновление городов и отделений используют настройки соответствующего модуля доставки.
         </p>
     </div>
 
@@ -712,36 +624,15 @@
     <div class="card bg-light mb-3" id="opportunities">
         <div class="card-header">Функциональные возможности</div>
         <div class="card-body">
-            <h6>Основное</h6>
             <ul class="list-unstyled">
-                <li><i class="fas fa-barcode fa-fw"></i> номер отправления в списке заказов, на карточке и в кабинете</li>
-                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка перехода на официальный трекинг перевозчика</li>
-                <li><i class="far fa-copy fa-fw"></i> копирование номера в админ-списке и на карточке заказа</li>
-                <li><i class="fas fa-truck fa-fw"></i> меню в шапке: проверка API, обновление городов и отделений</li>
-                <li><i class="fas fa-database fa-fw"></i> резервная копия справочников каждого перевозчика с восстановлением</li>
+                <li><i class="fas fa-barcode fa-fw"></i> номер отправления (ТТН) в списке заказов админки, на карточке заказа и в кабинете покупателя</li>
+                <li><i class="fas fa-external-link-alt fa-fw"></i> кнопка перехода на официальный трекинг перевозчика в цвете бренда</li>
+                <li><i class="far fa-copy fa-fw"></i> копирование исходного номера в админ-списке и на карточке заказа</li>
+                <li><i class="fas fa-truck fa-fw"></i> меню в шапке админки: проверка API, обновление городов и отделений для включённых перевозчиков</li>
+                <li><i class="fas fa-sliders-h fa-fw"></i> отдельные переключатели для каждой поверхности: статус модуля, меню в шапке, список заказов, карточка заказа, кабинет покупателя</li>
+                <li><i class="fas fa-database fa-fw"></i> одна резервная копия справочников каждого перевозчика с восстановлением</li>
+                <li><i class="fas fa-info-circle fa-fw"></i> если включён Nova Poshta PRO и его колонка в списке заказов уже заполнена, модуль дополняет только пустые ячейки; на карточке заказа номер не показывается для заказов, которыми управляет Nova Poshta PRO</li>
             </ul>
-            <div id="opportunities-admin-accordion">
-                <div class="item">
-                    <a class="collapsed" data-bs-toggle="collapse" href="#opportunities-admin-accordion-1" aria-expanded="false">подробнее...</a>
-                    <div id="opportunities-admin-accordion-1" class="collapse" role="tabpanel">
-                        <h6>Вкладка «Общие»</h6>
-                        <ul>
-                            <li><strong>Статус</strong>, <strong>Меню в шапке</strong>, <strong>Список заказов</strong>, <strong>Карточка заказа</strong>, <strong>Кабинет покупателя</strong></li>
-                        </ul>
-                        <h6>Вкладка «Резервные копии»</h6>
-                        <ul>
-                            <li>сохранение и восстановление справочников перевозчиков (таблицы <code>__sdp</code>)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-3">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_1.png" class="img-thumbnail d-block mb-2" alt="Настройки">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_2.png" class="img-thumbnail d-block mb-2" alt="Список заказов">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_3.png" class="img-thumbnail d-block mb-2" alt="Карточка заказа">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_4.png" class="img-thumbnail d-block mb-2" alt="История заказов">
-                <img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_5.png" class="img-thumbnail d-block" alt="Заказ в кабинете">
-            </p>
         </div>
     </div>
     <div class="card bg-light mb-3" id="languages">
@@ -754,17 +645,6 @@
             <ul>
                 <li>OpenCart 3.x; 1.5.x — пункт меню «Shipping Data Plus» рядом с «Выход»</li>
                 <li>нужен хотя бы один включённый модуль доставки OC Max</li>
-            </ul>
-            <p><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_7.png" class="img-thumbnail" alt="Меню OpenCart 1.5"></p>
-        </div>
-    </div>
-    <div class="card bg-light mb-3" id="license">
-        <div class="card-header">Лицензия</div>
-        <div class="card-body">
-            <ul class="list-unstyled">
-                <li><i class="fas fa-gift"></i> бесплатно по <strong>MIT</strong></li>
-                <li><i class="fas fa-unlock"></i> ключ лицензии OC Max и ключи API модуля не требуются</li>
-                <li><a href="https://oc-max.com/docs/shippingdata-plus/license.md" target="_blank">license.md</a></li>
             </ul>
         </div>
     </div>
@@ -876,9 +756,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3">Где меню на OpenCart 1.5?</button>
                     </h2>
                     <div id="faq-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                        <div class="accordion-body">Пункт <strong>Shipping Data Plus</strong> в верхнем меню. На карточке заказа — вкладка адреса доставки.
-                            <p class="mt-2"><img src="https://oc-max.com/docs/shippingdata-plus/images/screenshot_8.png" class="img-thumbnail" alt="Карточка заказа 1.5"></p>
-                        </div>
+                        <div class="accordion-body">Пункт <strong>Shipping Data Plus</strong> в верхнем меню. На карточке заказа — вкладка адреса доставки.</div>
                     </div>
                 </div>
             </div>
@@ -891,7 +769,6 @@
             <kbd>v. 1.0.0 от 03.11.2026:</kbd>
             <ul>
                 <li>первый выпуск: ТТН и трекинг, меню в шапке, резервные копии справочников</li>
-                <li>лицензия MIT</li>
             </ul>
         </div>
     </div>
