@@ -35,7 +35,8 @@ button.sdp-btn { font-family: inherit; }
 .sdp-table thead td { background: #f5f5f5; font-weight: bold; }
 .sdp-right { text-align: right; }
 .sdp-cols { overflow: hidden; }
-.sdp-col { float: left; width: 48%; margin: 0 2% 12px 0; }
+.sdp-col { float: left; width: 49%; margin: 0 0 12px; }
+.sdp-col:nth-child(odd) { clear: left; margin-right: 2%; }
 .sdp-carrier { border-left: 4px solid #1e91cf; }
 .sdp-carrier-novaposhta { border-left-color: #ff392e; }
 .sdp-carrier-rozetka_delivery { border-left-color: #00A046; }
