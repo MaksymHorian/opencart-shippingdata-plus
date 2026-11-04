@@ -25,7 +25,7 @@ class ModelExtensionModuleShippingdataPlus extends Model {
 		return $type === 'cities' || $type === 'departments';
 	}
 
-	public function getOrdersTtn($order_ids) {
+	public function getOrdersTtn($order_ids, $include_owned = false) {
 		$ids = $this->orderIds($order_ids);
 
 		if (!$ids) {
@@ -50,7 +50,8 @@ class ModelExtensionModuleShippingdataPlus extends Model {
 			}
 
 			// Leave the row to Nova Poshta PRO when that module already owns the order.
-			if ($resolved['carrier'] === 'novaposhta' && $this->proOwnsNovaPoshtaOrder($row['order_id'])) {
+			// Account fill passes $include_owned so an empty PRO cell can still show the number.
+			if (!$include_owned && $resolved['carrier'] === 'novaposhta' && $this->proOwnsNovaPoshtaOrder($row['order_id'])) {
 				continue;
 			}
 
